@@ -1,0 +1,362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleburn 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-29 22:10-0100\n"
+"PO-Revision-Date: 2010-12-29 09:20+0200\n"
+"Last-Translator: Fekete András <andras@email.ro>\n"
+"Language-Team: Hungarian\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: -k\n"
+"X-Poedit-Language: Hungarian\n"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:128
+msgid "_File"
+msgstr "_Fájl"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:141
+msgid "_Help"
+msgstr "_Segítség"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:169
+msgid "About SimpleBurn"
+msgstr "a SimpleBurn-ről"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:213
+msgid "SimpleBurn"
+msgstr "SimpleBurn"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:249
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:373
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:562
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1092
+msgid "CD / DVD reader :"
+msgstr "CD / DVD olvasó:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:285
+msgid "Get media informations"
+msgstr "Lemezinformáció beolvasása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:299
+msgid "Eject"
+msgstr "Lemezt kiad"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:326
+msgid "Informations"
+msgstr "Információk"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:362
+msgid "Image file name :"
+msgstr "Lemezképfájl neve:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:380
+msgid "Location :"
+msgstr "Hely:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:428
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:447
+msgid "Extract ISO image"
+msgstr "ISO lemezkép készítése"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:478
+msgid "Image file :"
+msgstr "Lemezképfájl:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:485
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:964
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1099
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1192
+msgid "CD / DVD writer :"
+msgstr "CD / DVD író:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:522
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:541
+msgid "Burn ISO image"
+msgstr "ISO lemezkép felírása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:569
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:743
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:957
+msgid "Directory :"
+msgstr "Könyvtár:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:612
+msgid "Tracks :"
+msgstr ""
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:640
+msgid "Format :"
+msgstr ""
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:676
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:695
+msgid "Extract audio CD"
+msgstr "Audió CD kivonása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:716
+msgid "DVD reader :"
+msgstr "DVD olvasó:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:767
+msgid "Title :"
+msgstr "Cím:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:778
+msgid "Audio Language :"
+msgstr "Hangnyelv:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:789
+msgid "Subtitles :"
+msgstr "Felirat:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:800
+msgid "Quality :"
+msgstr "Minőség:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:881
+msgid "Detect"
+msgstr "Keresd"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:895
+msgid "Preview"
+msgstr "Előnézet"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:909
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:936
+msgid "Extract video DVD"
+msgstr "Videó DVD kivonása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:997
+msgid "Select a directory"
+msgstr "Válassz egy könyvtárat"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1018
+msgid "Burn audio CD"
+msgstr "Audió CD írása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1032
+msgid "Burn data CD / DVD"
+msgstr "Adat CD / DVD írása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1056
+msgid "<i>Note: MP3 CDs are data CDs.</i>"
+msgstr "<i>Megjegyzés: az MP3 CD-k adat CD-k</i>"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1071
+msgid "Burn audio / data"
+msgstr "Audió / Adatok felírása"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1153
+msgid "Copy CD / DVD"
+msgstr "CD / DVD másolás"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1172
+msgid "Copy"
+msgstr "Másolás"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1227
+msgid "Fast CD / DVD blanking"
+msgstr "CD / DVD gyors törlése"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1241
+msgid "Complete CD / DVD blanking"
+msgstr "Újraírható CD / DVD teljes törlése"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1267
+msgid "Blank"
+msgstr "Törlés"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1351
+msgid "Total time :"
+msgstr "Teljes idő:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1375
+msgid "Elapsed time :"
+msgstr "Eltelt idő:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1399
+msgid "Remaining time :"
+msgstr "Hátramaradt idő:"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:27
+#, c-format
+msgid "Fast '%s' CD/RW blanking ..."
+msgstr "'%s' CD/RW gyors törlése ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:29
+#, c-format
+msgid "Fast '%s' DVD/RW blanking ..."
+msgstr "'%s' DVD/RW gyors törlése ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:52
+#, c-format
+msgid "Full '%s' CD/RW blanking ..."
+msgstr "'%s' CD/RW teljes törlése ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:54
+#, c-format
+msgid "Full '%s' DVD/RW blanking ..."
+msgstr "'%s' DVD/RW teljes törlése ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:5
+msgid "Error : no rewritable CD / DVD in drive."
+msgstr "Hiba: a meghajtóban nincs újraírható CD / DVD"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:15
+msgid "Error : no CD in drive."
+msgstr "Hiba: a meghajtóban nincs CD lemez"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:25
+msgid "Error : no DVD in drive."
+msgstr "Hiba: a meghajtóban nincs DVD lemez"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:36
+msgid "Error : media in drive is not blank."
+msgstr "Hiba: a meghajtóban levő lemez nem üres"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:50
+msgid "Error : media in drive is blank."
+msgstr "Hiba: a meghajtóban levő lemez üres"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:62
+msgid "Error : no audio CD in drive."
+msgstr "Hiba: a meghajtóban nincs audió CD"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:72
+msgid "Error : no ISO9660 formatted media in drive."
+msgstr "Hiba: a meghajtóban levő lemez nem ISO9660 formátumú "
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:80
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:90
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:100
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:110
+msgid "Error : not enough space on media."
+msgstr "Hiba: nincs elég hely a lemezen"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:125
+msgid "Error : image file is not set."
+msgstr "Hiba: lemezképfájl nincs megadva"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:139
+msgid "Error : image file name empty."
+msgstr "Hiba: lemezképfájl neve üres"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:149
+msgid "Error : CD / DVD reader and writer must be different for copy."
+msgstr ""
+"Hiba:  CD / DVD másolásához az olvasó és író két különböző meghajtó kell "
+"legyen"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:23
+#, c-format
+msgid "Burning '%s' ISO image on '%s' ..."
+msgstr "'%s' ISO kép kép írása ezen: '%s' ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:55
+#, c-format
+msgid "Burning audio files in '%s' on '%s' ..."
+msgstr "Az itt ('%s') levő audió fájlok írása ezen: '%s' ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:89
+#, c-format
+msgid "Burning data in directory '%s' on '%s' ..."
+msgstr "Az itt ('%s') levő adat fájlok írása ezen: '%s' ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:140
+msgid "Error : no video DVD in drive."
+msgstr "Hiba: a meghajtóban nincs videó DVD"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:210
+msgid "Extracting video DVD ..."
+msgstr "Videó DVD kivonása folyamatban ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:247
+msgid "none"
+msgstr "egy sem"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-copy.c:27
+#, c-format
+msgid "Copy audio CD in '%s' to '%s' ..."
+msgstr "Az itt ('%s') levő audió CD másolása ide: '%s' ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-copy.c:30
+#, c-format
+msgid "Copy data CD / DVD in '%s' to '%s' ..."
+msgstr "Az itt ('%s') levő adat CD / DVD másolása ide: '%s' ..."
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-extract.c:38
+#, c-format
+msgid "Extracting ISO image of '%s' to '%s' ..."
+msgstr "ISO lemezkép készítése erről '%s' ide: '%s'"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-extract.c:91
+#, c-format
+msgid "Extracting audio of '%s' to '%s' ..."
+msgstr "Audió kivonása erről '%s' ide: '%s'"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-launch.c:131
+msgid "Operation completed."
+msgstr ""
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-launch.c:133
+msgid "Error : something went wrong."
+msgstr ""
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:98
+msgid "Error : no CD / DVD device detected"
+msgstr "Hiba: CD / DVD meghajtó nem található"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:146
+msgid "MPEG-4 Normal quality"
+msgstr "MPEG-4 normális minőség"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:147
+msgid "MPEG-4 High quality"
+msgstr "MPEG-4 jó minőség"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:148
+msgid "MPEG-2 DVD quality (best)"
+msgstr "MPEG-2 DVD minőség (a legjobb)"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:12
+msgid "No media inserted"
+msgstr "Lemez nincs behelyezve"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:15
+msgid "rewritable"
+msgstr "újraírható"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:21
+msgid "Media type : blank CD"
+msgstr "Lemeztípus: üres CD"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:24
+msgid "Media type : audio CD"
+msgstr "Lemeztípus: audió CD"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:27
+msgid "Media type : data CD (ISO9660)"
+msgstr "Lemeztípus: adat CD (ISO9660)"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:29
+msgid "Media type : data CD (UDF)"
+msgstr "Mediatyp : adat CD (UDF)"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:35
+msgid "Media type : blank DVD"
+msgstr "Lemeztípus: üres DVD"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:37
+msgid "Media type : DVD (ISO9660)"
+msgstr "Lemeztípus: DVD (ISO9660)"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:39
+msgid "Media type : DVD (UDF)"
+msgstr "Lemeztípus: DVD (UDF)"
+
+#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:42
+msgid "Media type : unknown"
+msgstr "Lemeztípus: ismeretlen"

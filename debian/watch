@@ -1,0 +1,4 @@
+version=3
+
+http://simpleburn.tuxfamily.org/IMG/bz2/simpleburn-(.*)\.tar\.bz2
+
