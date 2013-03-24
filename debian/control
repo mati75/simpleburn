@@ -31,5 +31,3 @@ Description: minimalistic application for burning and extracting CDs and DVDs
    LibCDIO + CDRDAO).
  .
  SimpleBurn is free software licensed under the Cecill-2 license.
- This version was build with CDRKit support.
-
