@@ -1,20 +1,20 @@
 Description: Fix bug in .desktop file to Desktop Menu Specification 1.0
 Author: Mateusz Łukasik <mati75@linuxmint.pl>
---- simpleburn-1.6.5.orig/src/simpleburn.desktop
-+++ simpleburn-1.6.5/src/simpleburn.desktop
-@@ -1,10 +1,12 @@
+--- a/src/simpleburn.desktop
++++ b/src/simpleburn.desktop
+@@ -1,10 +1,11 @@
  [Desktop Entry]
- Encoding=UTF-8
+-Encoding=UTF-8
  Type=Application
 -
++StartupNotify=true
++Categories=AudioVideo;DiscBurning;
  Name=SimpleBurn
++GenericName=Disc Burner and Copier
  Comment=CD / DVD burning and extraction
 -
 -Categories=AudioVideo
-+StartupNotify=true
-+Categories=AudioVideo;DiscBurning;
++Terminal=false
++Keywords=disc;cdrom;dvd;burn;audio;video;
  Exec=simpleburn
  Icon=simpleburn
-+Terminal=false
-+
-+

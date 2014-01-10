@@ -1,5 +1,5 @@
 simpleburn (1.6.5-1) unstable; urgency=low
 
-  * Initial release.
+  * Initial release. (Closes: #712637)
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 24 Mar 2013 11:15:55 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 24 Jul 2013 12:38:07 +0200
