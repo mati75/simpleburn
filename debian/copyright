@@ -512,7 +512,7 @@ License: CeCILL-2
 
 Files: debian/*
 Copyright: 2011 Savvas Radevic <vicedar@gmail.com>
-           2012-2013 Mateusz Łukasik <mati75@linuxmint.pl>
+           2012-2014 Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
