@@ -4,13 +4,13 @@ Priority: extra
 Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
 Build-Depends: debhelper (>= 9), cmake (>= 2.6), pkg-config, libudev-dev,
  libburn-dev, libgtk2.0-dev (>= 2.12) 
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Homepage: http://simpleburn.tuxfamily.org
 Vcs-Git: git://github.com/mati75/simpleburn.git
 Vcs-Browser: https://github.com/mati75/simpleburn.git
 
 Package: simpleburn
-Architecture: any
+Architecture: linux-any
 Depends: ${shlibs:Depends}, ${misc:Depends}, xorriso, libcdio-utils, cdrskin, 
          cdrdao
 Recommends: mplayer-nogui|mplayer|gmplayer|mplayer2, mencoder, normalize-audio, 
