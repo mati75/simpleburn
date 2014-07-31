@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simpleburn 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-29 22:10-0100\n"
+"POT-Creation-Date: 2014-02-05 16:54+0100\n"
 "PO-Revision-Date: 2009-04-11 17:24+0001\n"
 "Last-Translator: Christoph Zeiler <moonborn@moonblade.org>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -16,349 +16,274 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.3.0\n"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:128
-msgid "_File"
-msgstr "_Datei"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:141
-msgid "_Help"
-msgstr "_Hilfe"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:169
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:8
 msgid "About SimpleBurn"
 msgstr "Über SimpleBurn"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:213
-msgid "SimpleBurn"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:17
+msgid "http://simpleburn.tuxfamily.org"
 msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:249
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:373
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:562
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1092
-msgid "CD / DVD reader :"
-msgstr "CD / DVD Laufwerk :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:285
-msgid "Get media informations"
-msgstr "Hole Medien-Details"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:299
-msgid "Eject"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:18
+msgid "CeCILL <http://www.cecill.info/licences.en.html>"
 msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:326
-msgid "Informations"
-msgstr "Informationen"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:20
+msgid ""
+"- cs : Jaromír Cápík <tavvva@seznam.cz>\n"
+"- de : Christoph Zeiler <moonborn@moonblade.org>\n"
+"- es : Pablo López <guesst@gmail.com>\n"
+"- fr : Frank Endres <frankendres@tuxfamily.org>\n"
+"- hu : András Fekete <andras@email.ro>\n"
+"- it : Andrea Sciucca <gohanz@infinito.it>\n"
+"- pl : Robert Wojewódzki <robwoj44@poczta.onet.pl>\n"
+"- sr : Jay Alexander Flemingódzki <tito.nehru.naser@gmail.com>\n"
+"- sv : Niklas Grahn <terra.unknown@yahoo.com>\n"
+"- ru : Andrey Frantsuzov <pokazsch@yandex.ru> & Dmitry Korzhevin "
+"<dkorzhevin@lsupport.net>\n"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:362
-msgid "Image file name :"
-msgstr "Abbild Dateiname :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:94
+msgid "Fast blanking"
+msgstr "Schnelles löschen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:380
-msgid "Location :"
-msgstr "Ort :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:109
+msgid "Full blanking"
+msgstr "Komplettes Löschen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:428
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:447
-msgid "Extract ISO image"
-msgstr "Entpacke ISO Abbild"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:478
-msgid "Image file :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:139
+msgid "ISO file:"
 msgstr "Abbild Datei :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:485
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:964
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1099
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1192
-msgid "CD / DVD writer :"
-msgstr "CD / DVD Rekorder :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:522
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:541
-msgid "Burn ISO image"
-msgstr "Brenne ISO Abbild"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:569
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:743
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:957
-msgid "Directory :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:149
+msgid "Directory:"
 msgstr "Verzeichnis :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:612
-msgid "Tracks :"
-msgstr ""
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:161
+msgid "Select an ISO image file to burn"
+msgstr "Abbild Datei zu brennen auswählen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:640
-msgid "Format :"
-msgstr ""
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:174
+msgid "Select a directory to burn"
+msgstr "Verzeichnis zu brennen auswählen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:676
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:695
-msgid "Extract audio CD"
-msgstr "Entpacke Audio CD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:186
+msgid "Burn file"
+msgstr "Datei brennen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:716
-msgid "DVD reader :"
-msgstr "DVD Laufwerk :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:201
+msgid "Burn directory"
+msgstr "Verzeichnis brennen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:767
-msgid "Title :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:276
+msgid "Attention: CD or DVD contains data."
+msgstr "Achtung : CD oder DVD enthält Daten."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:288
+msgid "Do You really want to erase it ?"
+msgstr "Wollen sie es wirklich löschen ?"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:323
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:441
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:513
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:775
+msgid "Extract"
+msgstr "Entpacke"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:336
+msgid "Track"
+msgstr "Stück"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:347
+msgid "Title"
+msgstr "Titel"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:358
+msgid "Length"
+msgstr "Dauer"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:405
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:469
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:630
+msgid "Select destination directory"
+msgstr "Zielverzeichnis auswählen"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:418
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:497
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:683
+msgid "Destination directory:"
+msgstr "Zielverzeichnis"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:429
+msgid "Format:"
+msgstr "Format :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:504
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:694
+msgid "Filename:"
+msgstr "Dateiname :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:643
+msgid "Title:"
 msgstr "Titel :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:778
-msgid "Audio Language :"
-msgstr "Audio-Sprache"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:650
+msgid "Language:"
+msgstr "Sprache :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:789
-msgid "Subtitles :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:661
+msgid "Subtitles:"
 msgstr "Untertiteln :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:800
-msgid "Quality :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:672
+msgid "Quality:"
 msgstr "Qualität :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:881
-msgid "Detect"
-msgstr "Identifizieren"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:739
+msgid "Crop:"
+msgstr "Schnitt :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:895
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:760
 msgid "Preview"
 msgstr "Vorschau"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:909
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:936
-msgid "Extract video DVD"
-msgstr "Entpacke Video DVD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:870
+msgid "_File"
+msgstr "_Datei"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:997
-msgid "Select a directory"
-msgstr "Verzeichnis auswählen"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:894
+msgid "Help"
+msgstr "Hilfe"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1018
-msgid "Burn audio CD"
-msgstr "Brenne Audio CD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:929
+msgid "CD / DVD device:"
+msgstr "CD / DVD Laufwerk :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1032
-msgid "Burn data CD / DVD"
-msgstr "Brenne Daten CD / DVD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:957
+msgid "Get media informations"
+msgstr "Hole Medien Informationen"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1056
-msgid "<i>Note: MP3 CDs are data CDs.</i>"
-msgstr "<i>Anmerkung: MP3 CDs sind Daten CDs.</i>"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:972
+msgid "Eject"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1071
-msgid "Burn audio / data"
-msgstr "Brenne Audio / Daten"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1036
+msgid "Type:"
+msgstr "Typ :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1153
-msgid "Copy CD / DVD"
-msgstr "CD / DVD kopieren"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1043
+msgid "Capacity:"
+msgstr "Kapazität :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1172
-msgid "Copy"
-msgstr "Kopie"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1106
+msgid "Content:"
+msgstr "Inhalt :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1227
-msgid "Fast CD / DVD blanking"
-msgstr "Schnelles CD / DVD löschen"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1126
+msgid "Size:"
+msgstr "Größe :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1241
-msgid "Complete CD / DVD blanking"
-msgstr "Komplettes CD / DVD löschen"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1202
+msgid "Estimated time:"
+msgstr "Geschätzte Zeit :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1267
-msgid "Blank"
-msgstr "Löschen"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1226
+msgid "Elapsed time:"
+msgstr "Abgelaufene Zeit :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1351
-msgid "Total time :"
-msgstr "Gesamtzeit :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1375
-msgid "Elapsed time :"
-msgstr "Bisherige Zeit :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1399
-msgid "Remaining time :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1250
+msgid "Remaining time:"
 msgstr "Verbleibende Zeit :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:27
-#, c-format
-msgid "Fast '%s' CD/RW blanking ..."
-msgstr "Schnelle '%s' CD/RW Löschung ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:45
+msgid "Fast blanking ..."
+msgstr "Schnelle Löschung ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:29
-#, c-format
-msgid "Fast '%s' DVD/RW blanking ..."
-msgstr "Schnelles Löschen von '%s' DVD/RW ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:60
+msgid "Full blanking ..."
+msgstr "Komplettes Löschung ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:52
-#, c-format
-msgid "Full '%s' CD/RW blanking ..."
-msgstr "Komplettes Löschen von '%s' CD/RW ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:76
+msgid "Error: please select file to burn."
+msgstr "Fehler : Bitte wählen Sie Datei zu brennen."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:54
-#, c-format
-msgid "Full '%s' DVD/RW blanking ..."
-msgstr "Komplettes Löschen von '%s' DVD/RW..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:80
+msgid "Burning file ..."
+msgstr "Datei brennung ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:5
-msgid "Error : no rewritable CD / DVD in drive."
-msgstr "Fehler : keine wiederbeschreibbare CD / DVD im Laufwerk."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:97
+msgid "Error: please select directory to burn."
+msgstr "Fehler : Bitte wählen Sie Verzeichnis zu brennen."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:15
-msgid "Error : no CD in drive."
-msgstr "Fehler : keine CD im Laufwerk."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:101
+msgid "Burning directory ..."
+msgstr "Verzeichnis brennung ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:25
-msgid "Error : no DVD in drive."
-msgstr "Fehler : keine DVD im Laufwerk."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:153
+msgid "Extracting audio CD ..."
+msgstr "Entpackung der Audio CD ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:36
-msgid "Error : media in drive is not blank."
-msgstr "Fehler : Medium im Laufwerk ist nicht leer."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:208
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:227
+msgid "Error: please enter a filename."
+msgstr "Fehler : bitte geben Sie einen Dateinamen."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:50
-msgid "Error : media in drive is blank."
-msgstr "Fehler : Medium im Laufwerk ist leer."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:62
-msgid "Error : no audio CD in drive."
-msgstr "Fehler : keine Audio CD im Laufwerk."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:72
-msgid "Error : no ISO9660 formatted media in drive."
-msgstr "Fehler : keine ISO9660-formatierte Medium im Laufwerk."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:80
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:90
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:100
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:110
-msgid "Error : not enough space on media."
-msgstr "Fehler : nicht genug Platz auf dem Medium."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:125
-msgid "Error : image file is not set."
-msgstr "Fehler : keine Abbilddatei ausgewählt."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:139
-msgid "Error : image file name empty."
-msgstr "Fehler : Name der Abbilddatei ist leer."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:149
-msgid "Error : CD / DVD reader and writer must be different for copy."
-msgstr ""
-"Fehler : CD / DVD Player und Brenner müssen sich bei Kopie unterscheiden."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:23
-#, c-format
-msgid "Burning '%s' ISO image on '%s' ..."
-msgstr "Brennen des '%s' ISO Abbildes auf '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:55
-#, c-format
-msgid "Burning audio files in '%s' on '%s' ..."
-msgstr "Brennen der Audio-Daten von '%s' auf '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:89
-#, c-format
-msgid "Burning data in directory '%s' on '%s' ..."
-msgstr "Brenne Daten in '%s' Verzeichnis auf '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:140
-msgid "Error : no video DVD in drive."
-msgstr "Fehler : keine Video-DVD im Laufwerk."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:210
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:212
 msgid "Extracting video DVD ..."
 msgstr "Entpacken Video DVD ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:247
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:232
+msgid "Extracting ISO image ..."
+msgstr "Entpacken ISO Abbild ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:58
+msgid "Operation completed."
+msgstr "Arbeitsgang abgeschlossen."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:61
+msgid "Error: please check there is enough space on media."
+msgstr "Fehler : bitte bestätigen das es genug Platz auf dem Medium gibt."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:63
+msgid "Error: something went wrong."
+msgstr "Fehler : Etwas ging falsch."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:69
+msgid "audio"
+msgstr "Audio"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:73
+msgid "video"
+msgstr "Video"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:78
+msgid "data"
+msgstr "Daten"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:115
+msgid "no media"
+msgstr "kein Medium"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:214
+msgid "Extract audio"
+msgstr "Entpacke Audio"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:215
+msgid "Extract video"
+msgstr "Entpacke Video"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:216
+msgid "Extract ISO"
+msgstr "Entpacke ISO"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:217
+msgid "Burn"
+msgstr "Brennen"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:218
+msgid "Erase"
+msgstr "Löschen"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:240
 msgid "none"
 msgstr "keine"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-copy.c:27
-#, c-format
-msgid "Copy audio CD in '%s' to '%s' ..."
-msgstr "Kopieren der Audio CD von '%s' nach '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-copy.c:30
-#, c-format
-msgid "Copy data CD / DVD in '%s' to '%s' ..."
-msgstr "Kopieren der Daten CD /DVD von '%s' nach '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-extract.c:38
-#, c-format
-msgid "Extracting ISO image of '%s' to '%s' ..."
-msgstr "Entpacken des ISO Abbildes von '%s' nach '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-extract.c:91
-#, c-format
-msgid "Extracting audio of '%s' to '%s' ..."
-msgstr "Entpacken der Audio-Daten von '%s' nach '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-launch.c:131
-msgid "Operation completed."
-msgstr ""
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-launch.c:133
-msgid "Error : something went wrong."
-msgstr ""
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:98
-msgid "Error : no CD / DVD device detected"
-msgstr "Fehler : kein CD / DVD Laufwerk gefunden."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:146
-msgid "MPEG-4 Normal quality"
-msgstr "MPEG-4 Normale Qualität"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:147
-msgid "MPEG-4 High quality"
-msgstr "MPEG-4 Hohe Qualität"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:148
-msgid "MPEG-2 DVD quality (best)"
-msgstr "MPEG-2 DVD Qualität (beste)"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:12
-msgid "No media inserted"
-msgstr "Kein Medium eingelegt"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:15
-msgid "rewritable"
-msgstr "wiederbeschreibbar"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:21
-msgid "Media type : blank CD"
-msgstr "Medientyp : leere CD"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:24
-msgid "Media type : audio CD"
-msgstr "Medientyp : Audio CD"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:27
-msgid "Media type : data CD (ISO9660)"
-msgstr "Medientyp : Daten CD (ISO9660)"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:29
-msgid "Media type : data CD (UDF)"
-msgstr "Medientyp : Daten CD (UDF)"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:35
-msgid "Media type : blank DVD"
-msgstr "Medientyp : leere DVD"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:37
-msgid "Media type : DVD (ISO9660)"
-msgstr "Medientyp : DVD (ISO9660)"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:39
-msgid "Media type : DVD (UDF)"
-msgstr "Medientyp : DVD (UDF)"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:42
-msgid "Media type : unknown"
-msgstr "Medientyp : unbekannt"

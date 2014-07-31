@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simpleburn 1.6.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-29 22:10-0100\n"
+"POT-Creation-Date: 2014-02-05 16:54+0100\n"
 "PO-Revision-Date: 2011-01-12 21:32+0100\n"
 "Last-Translator: Jaromír Cápík <tavvva@email.cz>\n"
 "Language-Team: Czech\n"
@@ -17,348 +17,453 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:128
-msgid "_File"
-msgstr "_Soubor"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:141
-msgid "_Help"
-msgstr "_Pomoc"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:169
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:8
 msgid "About SimpleBurn"
 msgstr "O aplikaci Simpleburn"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:213
-msgid "SimpleBurn"
-msgstr "SimpleBurn"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:17
+msgid "http://simpleburn.tuxfamily.org"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:249
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:373
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:562
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1092
-msgid "CD / DVD reader :"
-msgstr "CD / DVD čtečka :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:18
+msgid "CeCILL <http://www.cecill.info/licences.en.html>"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:285
-msgid "Get media informations"
-msgstr "Získat informace o médiu"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:20
+msgid ""
+"- cs : Jaromír Cápík <tavvva@seznam.cz>\n"
+"- de : Christoph Zeiler <moonborn@moonblade.org>\n"
+"- es : Pablo López <guesst@gmail.com>\n"
+"- fr : Frank Endres <frankendres@tuxfamily.org>\n"
+"- hu : András Fekete <andras@email.ro>\n"
+"- it : Andrea Sciucca <gohanz@infinito.it>\n"
+"- pl : Robert Wojewódzki <robwoj44@poczta.onet.pl>\n"
+"- sr : Jay Alexander Flemingódzki <tito.nehru.naser@gmail.com>\n"
+"- sv : Niklas Grahn <terra.unknown@yahoo.com>\n"
+"- ru : Andrey Frantsuzov <pokazsch@yandex.ru> & Dmitry Korzhevin "
+"<dkorzhevin@lsupport.net>\n"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:299
-msgid "Eject"
-msgstr "Vysunout"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:94
+#, fuzzy
+msgid "Fast blanking"
+msgstr "Rychlé CD / DVD mazání"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:326
-msgid "Informations"
-msgstr "Informace"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:109
+#, fuzzy
+msgid "Full blanking"
+msgstr "Úplné '%s' CD/RW mazání ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:362
-msgid "Image file name :"
-msgstr "Název souboru s obrazem :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:380
-msgid "Location :"
-msgstr "Umístění :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:428
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:447
-msgid "Extract ISO image"
-msgstr "Extrahovat ISO obraz"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:478
-msgid "Image file :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:139
+#, fuzzy
+msgid "ISO file:"
 msgstr "Soubor obrazu :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:485
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:964
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1099
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1192
-msgid "CD / DVD writer :"
-msgstr "CD / DVD vypalovačka :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:522
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:541
-msgid "Burn ISO image"
-msgstr "Vypálit ISO obraz"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:569
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:743
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:957
-msgid "Directory :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:149
+#, fuzzy
+msgid "Directory:"
 msgstr "Adresář :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:612
-msgid "Tracks :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:161
+msgid "Select an ISO image file to burn"
 msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:640
-msgid "Format :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:174
+#, fuzzy
+msgid "Select a directory to burn"
+msgstr "Vybrat adresář"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:186
+#, fuzzy
+msgid "Burn file"
+msgstr "Vypálit ISO obraz"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:201
+#, fuzzy
+msgid "Burn directory"
+msgstr "Vypaluji data v adresáři '%s' na '%s' ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:276
+msgid "Attention: CD or DVD contains data."
 msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:676
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:695
-msgid "Extract audio CD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:288
+msgid "Do You really want to erase it ?"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:323
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:441
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:513
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:775
+#, fuzzy
+msgid "Extract"
 msgstr "Extrahovat hudební CD"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:716
-msgid "DVD reader :"
-msgstr "DVD čtečka :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:336
+msgid "Track"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:767
-msgid "Title :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:347
+#, fuzzy
+msgid "Title"
 msgstr "Název :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:778
-msgid "Audio Language :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:358
+msgid "Length"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:405
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:469
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:630
+#, fuzzy
+msgid "Select destination directory"
+msgstr "Vybrat adresář"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:418
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:497
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:683
+#, fuzzy
+msgid "Destination directory:"
+msgstr "Vybrat adresář"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:429
+msgid "Format:"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:504
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:694
+#, fuzzy
+msgid "Filename:"
+msgstr "Název souboru s obrazem :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:643
+#, fuzzy
+msgid "Title:"
+msgstr "Název :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:650
+#, fuzzy
+msgid "Language:"
 msgstr "Jazyk nahrávky :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:789
-msgid "Subtitles :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:661
+#, fuzzy
+msgid "Subtitles:"
 msgstr "Titulky :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:800
-msgid "Quality :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:672
+#, fuzzy
+msgid "Quality:"
 msgstr "Kvalita :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:881
-msgid "Detect"
-msgstr "Detekovat"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:739
+msgid "Crop:"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:895
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:760
 msgid "Preview"
 msgstr "Ukázka"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:909
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:936
-msgid "Extract video DVD"
-msgstr "Extrahovat video DVD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:870
+msgid "_File"
+msgstr "_Soubor"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:997
-msgid "Select a directory"
-msgstr "Vybrat adresář"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:894
+#, fuzzy
+msgid "Help"
+msgstr "_Pomoc"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1018
-msgid "Burn audio CD"
-msgstr "Vypálit hudební CD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:929
+#, fuzzy
+msgid "CD / DVD device:"
+msgstr "CD / DVD čtečka :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1032
-msgid "Burn data CD / DVD"
-msgstr "Vypálit datové CD / DVD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:957
+msgid "Get media informations"
+msgstr "Získat informace o médiu"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1056
-msgid "<i>Note: MP3 CDs are data CDs.</i>"
-msgstr "<i>Poznámka: MP3 CD jsou datová CD.</i>"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:972
+msgid "Eject"
+msgstr "Vysunout"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1071
-msgid "Burn audio / data"
-msgstr "Vypálit hudbu / data"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1036
+msgid "Type:"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1153
-msgid "Copy CD / DVD"
-msgstr "Kopírovat CD / DVD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1043
+#, fuzzy
+msgid "Capacity:"
+msgstr "Kvalita :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1172
-msgid "Copy"
-msgstr "Kopírovat"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1106
+msgid "Content:"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1227
-msgid "Fast CD / DVD blanking"
-msgstr "Rychlé CD / DVD mazání"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1126
+msgid "Size:"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1241
-msgid "Complete CD / DVD blanking"
-msgstr "Úplné CD/ DVD mazání"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1267
-msgid "Blank"
-msgstr "Vymazat"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1351
-msgid "Total time :"
-msgstr "Celkový čas :"
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1375
-msgid "Elapsed time :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1202
+#, fuzzy
+msgid "Estimated time:"
 msgstr "Uplynulý čas :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/simpleburn.ui:1399
-msgid "Remaining time :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1226
+#, fuzzy
+msgid "Elapsed time:"
+msgstr "Uplynulý čas :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1250
+#, fuzzy
+msgid "Remaining time:"
 msgstr "Zbývající čas :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:27
-#, c-format
-msgid "Fast '%s' CD/RW blanking ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:45
+#, fuzzy
+msgid "Fast blanking ..."
 msgstr "Rychlé '%s' CD/RW mazání ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:29
-#, c-format
-msgid "Fast '%s' DVD/RW blanking ..."
-msgstr "Rychlé '%s' DVD/RW mazání ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:52
-#, c-format
-msgid "Full '%s' CD/RW blanking ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:60
+#, fuzzy
+msgid "Full blanking ..."
 msgstr "Úplné '%s' CD/RW mazání ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-blank.c:54
-#, c-format
-msgid "Full '%s' DVD/RW blanking ..."
-msgstr "Úplné '%s' DVD/RW mazání ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:5
-msgid "Error : no rewritable CD / DVD in drive."
-msgstr "Chyba : žádné přepisovatelné CD / DVD v mechanice."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:15
-msgid "Error : no CD in drive."
-msgstr "Chyba : žádné CD v mechanice."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:25
-msgid "Error : no DVD in drive."
-msgstr "Chyba : žádné DVD v mechanice."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:36
-msgid "Error : media in drive is not blank."
-msgstr "Chyba : médium v mechanice není prázdné."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:50
-msgid "Error : media in drive is blank."
-msgstr "Chyba : médium v mechanice je prázdné."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:62
-msgid "Error : no audio CD in drive."
-msgstr "Chyba : žádné hudební CD v mechanice."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:72
-msgid "Error : no ISO9660 formatted media in drive."
-msgstr "Chyba : žádné médium s formátem ISO9660 v mechanice."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:80
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:90
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:100
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:110
-msgid "Error : not enough space on media."
-msgstr "Chyba : nedostatek místa na médiu."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:125
-msgid "Error : image file is not set."
-msgstr "Chyba : soubor s obrazem není nenastaven."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:139
-msgid "Error : image file name empty."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:76
+#, fuzzy
+msgid "Error: please select file to burn."
 msgstr "Chyba :  název souboru s obrazem je prázdný."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-checks.c:149
-msgid "Error : CD / DVD reader and writer must be different for copy."
-msgstr "Chyba : CD / DVD čtečka a vypalovačka se při kopírování musí lišit."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:80
+msgid "Burning file ..."
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:23
-#, c-format
-msgid "Burning '%s' ISO image on '%s' ..."
-msgstr "Vypaluji '%s' ISO obraz na '%s' ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:97
+#, fuzzy
+msgid "Error: please select directory to burn."
+msgstr "Vybrat adresář"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:55
-#, c-format
-msgid "Burning audio files in '%s' on '%s' ..."
-msgstr "Vypaluji hudební soubory v '%s' na '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-burn.c:89
-#, c-format
-msgid "Burning data in directory '%s' on '%s' ..."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:101
+#, fuzzy
+msgid "Burning directory ..."
 msgstr "Vypaluji data v adresáři '%s' na '%s' ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:140
-msgid "Error : no video DVD in drive."
-msgstr "Chyba : žádné video DVD v mechanice."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:153
+#, fuzzy
+msgid "Extracting audio CD ..."
+msgstr "Extrahovat hudební CD"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:210
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:208
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:227
+#, fuzzy
+msgid "Error: please enter a filename."
+msgstr "Chyba :  název souboru s obrazem je prázdný."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:212
 msgid "Extracting video DVD ..."
 msgstr "Extrahuji video DVD ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-videodvd.c:247
-msgid "none"
-msgstr "žádný"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:232
+#, fuzzy
+msgid "Extracting ISO image ..."
+msgstr "Extrahuji video DVD ..."
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-copy.c:27
-#, c-format
-msgid "Copy audio CD in '%s' to '%s' ..."
-msgstr "Kopíruji hudební CD v '%s' na '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-copy.c:30
-#, c-format
-msgid "Copy data CD / DVD in '%s' to '%s' ..."
-msgstr "Kopíruji datové CD / DVD v '%s' na '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-extract.c:38
-#, c-format
-msgid "Extracting ISO image of '%s' to '%s' ..."
-msgstr "Extrahuji ISO obraz z '%s' do '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-extract.c:91
-#, c-format
-msgid "Extracting audio of '%s' to '%s' ..."
-msgstr "Extrahuji hudbu z '%s' do '%s' ..."
-
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-launch.c:131
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:58
 msgid "Operation completed."
 msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-launch.c:133
-msgid "Error : something went wrong."
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:61
+#, fuzzy
+msgid "Error: please check there is enough space on media."
+msgstr "Chyba : nedostatek místa na médiu."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:63
+msgid "Error: something went wrong."
 msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:98
-msgid "Error : no CD / DVD device detected"
-msgstr "Chyba : žádné CD / DVD zařízení nebylo detekováno"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:69
+msgid "audio"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:146
-msgid "MPEG-4 Normal quality"
-msgstr "MPEG-4 Běžná kvalita"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:73
+msgid "video"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:147
-msgid "MPEG-4 High quality"
-msgstr "MPEG-4 Vysoká kvalita"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:78
+msgid "data"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/common-interface.c:148
-msgid "MPEG-2 DVD quality (best)"
-msgstr "MPEG-2 DVD kvalita (nejlepší)"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:115
+msgid "no media"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:12
-msgid "No media inserted"
-msgstr "Médium nevloženo"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:214
+#, fuzzy
+msgid "Extract audio"
+msgstr "Extrahovat hudební CD"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:15
-msgid "rewritable"
-msgstr "přepisovatelný"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:215
+#, fuzzy
+msgid "Extract video"
+msgstr "Extrahovat video DVD"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:21
-msgid "Media type : blank CD"
-msgstr "Typ média : prázdné CD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:216
+#, fuzzy
+msgid "Extract ISO"
+msgstr "Extrahovat ISO obraz"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:24
-msgid "Media type : audio CD"
-msgstr "Typ média : hudební CD"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:217
+msgid "Burn"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:27
-msgid "Media type : data CD (ISO9660)"
-msgstr "Typ média : datové CD (ISO9660)"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:218
+msgid "Erase"
+msgstr ""
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:29
-msgid "Media type : data CD (UDF)"
-msgstr "Typ média : datové CD (UDF)"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:240
+msgid "none"
+msgstr "žádný"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:35
-msgid "Media type : blank DVD"
-msgstr "Typ média : prázdné DVD"
+#, fuzzy
+#~ msgid "Burn file or directory"
+#~ msgstr "Vybrat adresář"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:37
-msgid "Media type : DVD (ISO9660)"
-msgstr "Typ média : DVD (ISO9660)"
+#~ msgid "Total time :"
+#~ msgstr "Celkový čas :"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:39
-msgid "Media type : DVD (UDF)"
-msgstr "Typ média : DVD (UDF)"
+#~ msgid "SimpleBurn"
+#~ msgstr "SimpleBurn"
 
-#: /home/frank/Developpements/sallu/simpleburn-1.6.4/src/callbacks-misc.c:42
-msgid "Media type : unknown"
-msgstr "Typ média : neznámé"
+#~ msgid "Informations"
+#~ msgstr "Informace"
+
+#~ msgid "Location :"
+#~ msgstr "Umístění :"
+
+#~ msgid "CD / DVD writer :"
+#~ msgstr "CD / DVD vypalovačka :"
+
+#~ msgid "DVD reader :"
+#~ msgstr "DVD čtečka :"
+
+#~ msgid "Detect"
+#~ msgstr "Detekovat"
+
+#~ msgid "Burn audio CD"
+#~ msgstr "Vypálit hudební CD"
+
+#~ msgid "Burn data CD / DVD"
+#~ msgstr "Vypálit datové CD / DVD"
+
+#~ msgid "<i>Note: MP3 CDs are data CDs.</i>"
+#~ msgstr "<i>Poznámka: MP3 CD jsou datová CD.</i>"
+
+#~ msgid "Burn audio / data"
+#~ msgstr "Vypálit hudbu / data"
+
+#~ msgid "Copy CD / DVD"
+#~ msgstr "Kopírovat CD / DVD"
+
+#~ msgid "Copy"
+#~ msgstr "Kopírovat"
+
+#~ msgid "Complete CD / DVD blanking"
+#~ msgstr "Úplné CD/ DVD mazání"
+
+#~ msgid "Blank"
+#~ msgstr "Vymazat"
+
+#~ msgid "Fast '%s' DVD/RW blanking ..."
+#~ msgstr "Rychlé '%s' DVD/RW mazání ..."
+
+#~ msgid "Full '%s' DVD/RW blanking ..."
+#~ msgstr "Úplné '%s' DVD/RW mazání ..."
+
+#~ msgid "Error : no rewritable CD / DVD in drive."
+#~ msgstr "Chyba : žádné přepisovatelné CD / DVD v mechanice."
+
+#~ msgid "Error : no CD in drive."
+#~ msgstr "Chyba : žádné CD v mechanice."
+
+#~ msgid "Error : no DVD in drive."
+#~ msgstr "Chyba : žádné DVD v mechanice."
+
+#~ msgid "Error : media in drive is not blank."
+#~ msgstr "Chyba : médium v mechanice není prázdné."
+
+#~ msgid "Error : media in drive is blank."
+#~ msgstr "Chyba : médium v mechanice je prázdné."
+
+#~ msgid "Error : no audio CD in drive."
+#~ msgstr "Chyba : žádné hudební CD v mechanice."
+
+#~ msgid "Error : no ISO9660 formatted media in drive."
+#~ msgstr "Chyba : žádné médium s formátem ISO9660 v mechanice."
+
+#~ msgid "Error : image file is not set."
+#~ msgstr "Chyba : soubor s obrazem není nenastaven."
+
+#~ msgid "Error : CD / DVD reader and writer must be different for copy."
+#~ msgstr "Chyba : CD / DVD čtečka a vypalovačka se při kopírování musí lišit."
+
+#~ msgid "Burning '%s' ISO image on '%s' ..."
+#~ msgstr "Vypaluji '%s' ISO obraz na '%s' ..."
+
+#~ msgid "Burning audio files in '%s' on '%s' ..."
+#~ msgstr "Vypaluji hudební soubory v '%s' na '%s' ..."
+
+#~ msgid "Error : no video DVD in drive."
+#~ msgstr "Chyba : žádné video DVD v mechanice."
+
+#~ msgid "Copy audio CD in '%s' to '%s' ..."
+#~ msgstr "Kopíruji hudební CD v '%s' na '%s' ..."
+
+#~ msgid "Copy data CD / DVD in '%s' to '%s' ..."
+#~ msgstr "Kopíruji datové CD / DVD v '%s' na '%s' ..."
+
+#~ msgid "Extracting ISO image of '%s' to '%s' ..."
+#~ msgstr "Extrahuji ISO obraz z '%s' do '%s' ..."
+
+#~ msgid "Extracting audio of '%s' to '%s' ..."
+#~ msgstr "Extrahuji hudbu z '%s' do '%s' ..."
+
+#~ msgid "Error : no CD / DVD device detected"
+#~ msgstr "Chyba : žádné CD / DVD zařízení nebylo detekováno"
+
+#~ msgid "MPEG-4 Normal quality"
+#~ msgstr "MPEG-4 Běžná kvalita"
+
+#~ msgid "MPEG-4 High quality"
+#~ msgstr "MPEG-4 Vysoká kvalita"
+
+#~ msgid "MPEG-2 DVD quality (best)"
+#~ msgstr "MPEG-2 DVD kvalita (nejlepší)"
+
+#~ msgid "No media inserted"
+#~ msgstr "Médium nevloženo"
+
+#~ msgid "rewritable"
+#~ msgstr "přepisovatelný"
+
+#~ msgid "Media type : blank CD"
+#~ msgstr "Typ média : prázdné CD"
+
+#~ msgid "Media type : audio CD"
+#~ msgstr "Typ média : hudební CD"
+
+#~ msgid "Media type : data CD (ISO9660)"
+#~ msgstr "Typ média : datové CD (ISO9660)"
+
+#~ msgid "Media type : data CD (UDF)"
+#~ msgstr "Typ média : datové CD (UDF)"
+
+#~ msgid "Media type : blank DVD"
+#~ msgstr "Typ média : prázdné DVD"
+
+#~ msgid "Media type : DVD (ISO9660)"
+#~ msgstr "Typ média : DVD (ISO9660)"
+
+#~ msgid "Media type : DVD (UDF)"
+#~ msgstr "Typ média : DVD (UDF)"
+
+#~ msgid "Media type : unknown"
+#~ msgstr "Typ média : neznámé"

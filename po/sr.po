@@ -1,26 +1,27 @@
-# Spanish translations for simpleburn package
-# Traducciones al español para el paquete simpleburn.
-# Copyright (C) 2010 THE simpleburn'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the simpleburn package.
-#  <guesst@gmail.com>, 2010.
+# Serbian translation for SimpleBurn package
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the SimpleBurn package.
+# Jay A. Fleming <tito.nehru.naser@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleburn 1.5.2.1\n"
+"Project-Id-Version: simpleburn 1.6.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-05 16:54+0100\n"
-"PO-Revision-Date: 2010-11-05 13:45+0100\n"
-"Last-Translator:  <guesst@gmail.com>\n"
-"Language-Team: Spanish\n"
+"PO-Revision-Date: 2014-04-27 23:49+0100\n"
+"Last-Translator: Jay Alexander Fleming <tito.nehru.naser@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Language: Serbian\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:8
 msgid "About SimpleBurn"
-msgstr ""
+msgstr "О програму"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:17
 msgid "http://simpleburn.tuxfamily.org"
@@ -28,7 +29,7 @@ msgstr ""
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:18
 msgid "CeCILL <http://www.cecill.info/licences.en.html>"
-msgstr ""
+msgstr "ЦеЦИЛЛ <http://www.cecill.info/licences.en.html>"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:20
 msgid ""
@@ -41,408 +42,408 @@ msgid ""
 "- pl : Robert Wojewódzki <robwoj44@poczta.onet.pl>\n"
 "- sr : Jay Alexander Flemingódzki <tito.nehru.naser@gmail.com>\n"
 "- sv : Niklas Grahn <terra.unknown@yahoo.com>\n"
-"- ru : Andrey Frantsuzov <pokazsch@yandex.ru> & Dmitry Korzhevin "
-"<dkorzhevin@lsupport.net>\n"
+"- ru : Andrey Frantsuzov <pokazsch@yandex.ru> & Dmitry Korzhevin <dkorzhevin@lsupport.net>\n"
 msgstr ""
+"- cs : Јаромир Цапик <tavvva@seznam.cz>\n"
+"- de : Кристоф Цајлер <moonborn@moonblade.org>\n"
+"- es : Пабло Лопез <guesst@gmail.com>\n"
+"- fr : Франк Ендрес <frankendres@tuxfamily.org>\n"
+"- hu : Андраш Фекете <andras@email.ro>\n"
+"- it : Андреа Сцијућа <gohanz@infinito.it>\n"
+"- pl : Роберт Војеводски <robwoj44@poczta.onet.pl>\n"
+"- sr : Џеј Александар Флеминг <tito.nehru.naser@gmail.com>\n"
+"- sv : Никлас Гран <terra.unknown@yahoo.com>\n"
+"- ru : Андреј Французов <pokazsch@yandex.ru> и Дмитриј Коржевин <dkorzhevin@lsupport.net>\n"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:94
-#, fuzzy
 msgid "Fast blanking"
-msgstr "Formato rapido de CD / DVD"
+msgstr "Брзо брисање"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:109
-#, fuzzy
 msgid "Full blanking"
-msgstr "Formato completo de CD/RW a '%s' ..."
+msgstr "Потпуно брисање"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:139
-#, fuzzy
 msgid "ISO file:"
-msgstr "Archivo de imagen :"
+msgstr "Одраз диска:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:149
-#, fuzzy
 msgid "Directory:"
-msgstr "Directorio :"
+msgstr "Директоријум:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:161
 msgid "Select an ISO image file to burn"
-msgstr ""
+msgstr "Одаберите одраз диска за нарезивање"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:174
-#, fuzzy
 msgid "Select a directory to burn"
-msgstr "Seleccionar un directorio"
+msgstr "Изаберите директоријум за нарезивање"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:186
-#, fuzzy
 msgid "Burn file"
-msgstr "Grabar imagen ISO"
+msgstr "Нарежи датотеку"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:201
-#, fuzzy
 msgid "Burn directory"
-msgstr "Grabando los datos de la carpeta '%s' en '%s' ..."
+msgstr "Нарежи директоријум"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:276
 msgid "Attention: CD or DVD contains data."
-msgstr ""
+msgstr "УПОЗОРЕЊЕ! ЦД или ДВД садржи податке!"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:288
 msgid "Do You really want to erase it ?"
-msgstr ""
+msgstr "Да ли сте сигурни да желите да га пребришете?"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:323
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:441
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:513
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:775
-#, fuzzy
 msgid "Extract"
-msgstr "Extraer audio de CD"
+msgstr "Извуци"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:336
 msgid "Track"
-msgstr ""
+msgstr "Нумера"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:347
 msgid "Title"
-msgstr ""
+msgstr "Наслов"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:358
 msgid "Length"
-msgstr ""
+msgstr "Трајање"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:405
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:469
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:630
-#, fuzzy
 msgid "Select destination directory"
-msgstr "Seleccionar un directorio"
+msgstr "Изаберите одредиште"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:418
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:497
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:683
-#, fuzzy
 msgid "Destination directory:"
-msgstr "Seleccionar un directorio"
+msgstr "Одредишни директоријум:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:429
 msgid "Format:"
-msgstr ""
+msgstr "Формат:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:504
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:694
-#, fuzzy
 msgid "Filename:"
-msgstr "Nombre del archivo de imagen :"
+msgstr "Име датотеке:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:643
 msgid "Title:"
-msgstr ""
+msgstr "Наслов:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:650
 msgid "Language:"
-msgstr ""
+msgstr "Језик:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:661
 msgid "Subtitles:"
-msgstr ""
+msgstr "Превод:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:672
 msgid "Quality:"
-msgstr ""
+msgstr "Квалитет:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:739
 msgid "Crop:"
-msgstr ""
+msgstr "Исеци:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:760
 msgid "Preview"
-msgstr ""
+msgstr "Претпреглед"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:870
 msgid "_File"
-msgstr "_Archivo"
+msgstr "_Датотека"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:894
-#, fuzzy
 msgid "Help"
-msgstr "_y Ayuda"
+msgstr "Помоћ"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:929
-#, fuzzy
 msgid "CD / DVD device:"
-msgstr "Lector de CD / DVD :"
+msgstr "ЦД-ДВД уређај:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:957
 msgid "Get media informations"
-msgstr "Obtener info del medio"
+msgstr "Преузми податке о медију"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:972
 msgid "Eject"
-msgstr "Expulsar"
+msgstr "Избаци"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1036
 msgid "Type:"
-msgstr ""
+msgstr "Врста:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1043
 msgid "Capacity:"
-msgstr ""
+msgstr "Доступно:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1106
 msgid "Content:"
-msgstr ""
+msgstr "Садржај:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1126
 msgid "Size:"
-msgstr ""
+msgstr "Величина:"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1202
-#, fuzzy
 msgid "Estimated time:"
-msgstr "Tiempo transcurrido :"
+msgstr "Процењено време: "
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1226
-#, fuzzy
 msgid "Elapsed time:"
-msgstr "Tiempo transcurrido :"
+msgstr "Протекло је: "
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1250
-#, fuzzy
 msgid "Remaining time:"
-msgstr "Tiemop restante :"
+msgstr "Преостало је: "
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:45
-#, fuzzy
 msgid "Fast blanking ..."
-msgstr "Formato rÃ¡pido del CD/RW a '%s' ..."
+msgstr "Брзо брисање..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:60
-#, fuzzy
 msgid "Full blanking ..."
-msgstr "Formato completo de CD/RW a '%s' ..."
+msgstr "Потпуно брисање..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:76
-#, fuzzy
 msgid "Error: please select file to burn."
-msgstr "Error : el archivo de imagen estÃ¡ vacÃ­o."
+msgstr "Грешка! Нисте одабрали одраз диска за нарезивање."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:80
 msgid "Burning file ..."
-msgstr ""
+msgstr "Нарезујем датотеку..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:97
-#, fuzzy
 msgid "Error: please select directory to burn."
-msgstr "Seleccionar un directorio"
+msgstr "Грешка! Нисте одабрали директоријум за нарезивање."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:101
-#, fuzzy
 msgid "Burning directory ..."
-msgstr "Grabando los datos de la carpeta '%s' en '%s' ..."
+msgstr "Нарезујем директоријум..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:153
-#, fuzzy
 msgid "Extracting audio CD ..."
-msgstr "Extraer audio de CD"
+msgstr "Извлачим звучне нумере..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:208
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:227
-#, fuzzy
 msgid "Error: please enter a filename."
-msgstr "Error : el archivo de imagen estÃ¡ vacÃ­o."
+msgstr "Грешка! Нисте навели име датотеке."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:212
 msgid "Extracting video DVD ..."
-msgstr ""
+msgstr "Извозим видео диск..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:232
-#, fuzzy
 msgid "Extracting ISO image ..."
-msgstr "Extraer la imagen ISO"
+msgstr "Распакујем одраз диска..."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:58
 msgid "Operation completed."
-msgstr ""
+msgstr "Завршио сам!"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:61
-#, fuzzy
 msgid "Error: please check there is enough space on media."
-msgstr "Error : no hay suficiente espacio en el medio."
+msgstr "Грешка! Недовољно је простора на медију."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:63
 msgid "Error: something went wrong."
-msgstr ""
+msgstr "Грешка! Нешто је кренуло наопако."
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:69
 msgid "audio"
-msgstr ""
+msgstr "звук"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:73
 msgid "video"
-msgstr ""
+msgstr "видео"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:78
 msgid "data"
-msgstr ""
+msgstr "подаци"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:115
 msgid "no media"
-msgstr ""
+msgstr "нема доступних дискова"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:214
-#, fuzzy
 msgid "Extract audio"
-msgstr "Extraer audio de CD"
+msgstr "Извуци звучне нумере"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:215
-#, fuzzy
 msgid "Extract video"
-msgstr "Extraer audio de CD"
+msgstr "Извуци видео"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:216
-#, fuzzy
 msgid "Extract ISO"
-msgstr "Extraer la imagen ISO"
+msgstr "Распакуј одраз диска"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:217
 msgid "Burn"
-msgstr ""
+msgstr "Нарежи"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:218
 msgid "Erase"
-msgstr ""
+msgstr "Пребриши"
 
 #: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:240
 msgid "none"
-msgstr ""
+msgstr "ништа"
 
 #, fuzzy
 #~ msgid "Burn file or directory"
-#~ msgstr "Seleccionar un directorio"
+#~ msgstr "Изаберите директоријум"
 
 #~ msgid "Total time :"
-#~ msgstr "Tiempo total :"
+#~ msgstr "Укупно време: "
+
+#~ msgid "SimpleBurn"
+#~ msgstr "Лакорез"
 
 #~ msgid "Informations"
-#~ msgstr "InformaciÃ³n"
+#~ msgstr "ИНФО"
 
 #~ msgid "Location :"
-#~ msgstr "LocaciÃ³n :"
+#~ msgstr "Директоријум:"
 
 #~ msgid "CD / DVD writer :"
-#~ msgstr "Grabador CD / DVD :"
+#~ msgstr "Писач диска:"
 
 #~ msgid "DVD reader :"
-#~ msgstr "Lector de DVD :"
+#~ msgstr "Читач диска:"
+
+#~ msgid "Detect"
+#~ msgstr "Истражи"
 
 #~ msgid "Burn audio CD"
-#~ msgstr "Grabar un CD de audio"
+#~ msgstr "Упиши Звучни диск"
 
 #~ msgid "Burn data CD / DVD"
-#~ msgstr "Grabar un CD / DVD de datos"
+#~ msgstr "Упиши Диск са подацима"
 
 #~ msgid "<i>Note: MP3 CDs are data CDs.</i>"
-#~ msgstr "<i>Nota: un CD MP3 es un CD de datos.</i>"
+#~ msgstr ""
+#~ "<i>ПАЖЊА:\n"
+#~ "\tОГГ, ФЛАК, МП3 и сличне звучне записе\n"
+#~ "\tуписујете као Диск са подацима.</i>"
 
 #~ msgid "Burn audio / data"
-#~ msgstr "Grabar audio / datos"
+#~ msgstr "Нови диск..."
 
 #~ msgid "Copy CD / DVD"
-#~ msgstr "Copiar CD / DVD"
+#~ msgstr "Умножи диск"
 
 #~ msgid "Copy"
-#~ msgstr "Copiar"
+#~ msgstr "Резервна копија"
 
 #~ msgid "Complete CD / DVD blanking"
-#~ msgstr "Formato completo de CD / DVD"
+#~ msgstr "Пуно брисање пребрисивог диска"
 
 #~ msgid "Blank"
-#~ msgstr "Formato"
+#~ msgstr "Обриши"
 
 #~ msgid "Fast '%s' DVD/RW blanking ..."
-#~ msgstr "Formato rÃ¡pido del DVD/RW a '%s' ..."
+#~ msgstr "Брзо брисање ДВД-РВ диска у „%s“..."
 
 #~ msgid "Full '%s' DVD/RW blanking ..."
-#~ msgstr "Formato completo de DVD/RW a '%s' ..."
+#~ msgstr "Потпуно брисање ДВД-РВ диска у „%s“..."
 
 #~ msgid "Error : no rewritable CD / DVD in drive."
-#~ msgstr "Error : no hay CD / DVD reescribible en el dispositivo."
+#~ msgstr "Грешка! Нема пребрисивог диска у уређају."
 
 #~ msgid "Error : no CD in drive."
-#~ msgstr "Error : no hay un CD en el dispositivo."
+#~ msgstr "Грешка! Нема ЦД-а у уређају."
 
 #~ msgid "Error : no DVD in drive."
-#~ msgstr "Error : no hay un DVD en el dispositivo."
+#~ msgstr "Грешка! Нема ДВД-а у уређају."
 
 #~ msgid "Error : media in drive is not blank."
-#~ msgstr "Error : el medio en el dispositivo no estÃ¡ vacÃ­o."
+#~ msgstr "Грешка! Диск у уређају није празан."
 
 #~ msgid "Error : media in drive is blank."
-#~ msgstr "Error : el medio en el dispositivo estÃ¡ vacÃ­o."
+#~ msgstr "Грешка! Убацили сте празан диск."
 
 #~ msgid "Error : no audio CD in drive."
-#~ msgstr "Error : no hay un CD de audio CD en el dispositivo."
+#~ msgstr "Грешка! Нисте убацили звучни диск."
 
 #~ msgid "Error : no ISO9660 formatted media in drive."
-#~ msgstr "Error : no hay medio ISO9660 formateado en el dispositivo."
+#~ msgstr "Грешка! Нема медија у формату ИСО9660 у уређају."
 
 #~ msgid "Error : image file is not set."
-#~ msgstr "Error : no se ha establecido el archivo de imagen."
+#~ msgstr "Грешка: Није одабрана датотеке слике."
 
 #~ msgid "Error : CD / DVD reader and writer must be different for copy."
-#~ msgstr ""
-#~ "Error : para copiar el lector y la grabadora de CD / DVD deben ser "
-#~ "diferentes."
+#~ msgstr "Грешка! Код умножавања писач и читач су различити уређаји."
 
 #~ msgid "Burning '%s' ISO image on '%s' ..."
-#~ msgstr "Grabando la imagen ISO '%s' en '%s' ..."
+#~ msgstr "Уписујем ИСО слику „%s“ на „%s“..."
 
 #~ msgid "Burning audio files in '%s' on '%s' ..."
-#~ msgstr "Grabando archivos de audio de '%s' en '%s' ..."
+#~ msgstr "Уписујем звучне датотеке из „%s“ на „%s“..."
+
+#~ msgid "Error : no video DVD in drive."
+#~ msgstr "Грешка! Нисте убацили видео диск."
 
 #~ msgid "Copy audio CD in '%s' to '%s' ..."
-#~ msgstr "Copiando el CD de audio de '%s' a '%s' ..."
+#~ msgstr "Умножавам звучни диск из „%s“ у „%s“..."
 
 #~ msgid "Copy data CD / DVD in '%s' to '%s' ..."
-#~ msgstr "Copy data CD / DVD in '%s' to '%s' ..."
+#~ msgstr "Умножавам диск из „%s“ у „%s“..."
 
 #~ msgid "Extracting ISO image of '%s' to '%s' ..."
-#~ msgstr "Extrayendo la imagen ISO de '%s' a '%s' ..."
+#~ msgstr "Диск из „%s“ извозим у „%s“..."
 
 #~ msgid "Extracting audio of '%s' to '%s' ..."
-#~ msgstr "Extrayendo el audio de '%s' a '%s' ..."
+#~ msgstr "Звучни диск из „%s“ извозим у „%s“..."
 
 #~ msgid "Error : no CD / DVD device detected"
-#~ msgstr "Error : no se detectÃ³ el dispositivo CD / DVD"
+#~ msgstr "Грешка! Нисам пронашао уређај за дискове."
+
+#~ msgid "MPEG-4 Normal quality"
+#~ msgstr "МПЕГ-4 — добро"
+
+#~ msgid "MPEG-4 High quality"
+#~ msgstr "МПЕГ-4 — боље"
+
+#~ msgid "MPEG-2 DVD quality (best)"
+#~ msgstr "Најбоље — МПЕГ-2"
 
 #~ msgid "No media inserted"
-#~ msgstr "No hay medio insertado"
+#~ msgstr "Нема убаченог медија"
 
 #~ msgid "rewritable"
-#~ msgstr "No hay medio insertado"
+#~ msgstr "пребрисив"
 
 #~ msgid "Media type : blank CD"
-#~ msgstr "Tipo de medio : CD vacio"
+#~ msgstr "Врста диска: празан ЦД"
 
 #~ msgid "Media type : audio CD"
-#~ msgstr "Tipo de medio : CD de audio"
+#~ msgstr "Врста диска: звучни ЦД"
 
 #~ msgid "Media type : data CD (ISO9660)"
-#~ msgstr "Tipo de medio : CD de datos (ISO9660)"
+#~ msgstr "Врста диска: ЦД са подацима (ИСО9660)"
 
 #~ msgid "Media type : data CD (UDF)"
-#~ msgstr "Tipo de medio : CD de datos (UDF)"
+#~ msgstr "Врста диска: ЦД са подацима (УДФ)"
 
 #~ msgid "Media type : blank DVD"
-#~ msgstr "Tipo de medio : DVD vacio"
+#~ msgstr "Врста диска: празан ДВД"
 
 #~ msgid "Media type : DVD (ISO9660)"
-#~ msgstr "Tipo de medio : DVD (ISO9660)"
+#~ msgstr "Врста диска: ДВД (ИСО9660)"
 
 #~ msgid "Media type : DVD (UDF)"
-#~ msgstr "Tipo de medio : DVD (UDF)"
+#~ msgstr "Врста диска: ДВД (УДФ)"
 
 #~ msgid "Media type : unknown"
-#~ msgstr "Tipo de medio : desconocido"
+#~ msgstr "Врста диска: непознато"

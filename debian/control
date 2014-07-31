@@ -13,7 +13,7 @@ Package: simpleburn
 Architecture: linux-any
 Depends: ${shlibs:Depends}, ${misc:Depends}, xorriso, libcdio-utils, cdrskin, 
          cdrdao
-Recommends: mplayer-nogui|mplayer|gmplayer|mplayer2, mencoder, normalize-audio, 
+Recommends: mplayer|mplayer2, mencoder, normalize-audio, 
             mpg123, vorbis-tools, flac
 Description: Minimalistic application for burning and extracting CDs and DVDs
  Features are:

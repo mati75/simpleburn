@@ -1,15 +1,15 @@
-Make data compilations, with save & load feature ?
+1.7.1 - quality improvments
+simpleburn-gauge.sh -> simpleburn-gauges.c
+video ripping: detection of all titles is unneeded
+detection: add pulse bar
 
-Add support for tools detection to enable options (DVD ripping for exemple) ?
-Add support for DeviceKit device and media detection ?
-Add more versatile burning suite selection, for example: AUDIOCOPYING=cdrdao|cdrecord, ISOMASTERING=xorriso|mkisofs|growisofs ?
+1.7.2 - features improvments
+Audio / data compilations
+
+
+1.7.3
 Verify integrity ?
 Support Hybrid (audio / data) media ?
+Add option to extract / write UDF formatted medias ?
 Add option to write multisession CDs ?
-Add option to write UDF formatted medias ?
-Add option to make bootable media (with syslinux for example) ?
 Add option to append data on overwritable media ?
-Add option to burn dual-layer XBox DVDs ?
-Extract DVD audio only ?
-Choose audio encoding bitrate (for MP3 and Vorbis)
-Add support for GTK3, FLTK, Qt ?

@@ -1,0 +1,17 @@
+Requirements:
+- gtk+2 or gtk+3
+- burning suite: cdrtools (cdrecord, cdda2wav, mkisofs) / cdrkit (*** with symlinks ***: cdrecord->wodim, cdda2wav->icedax, genisoimage->mkisofs)
+- detection: cdrom_id, blkid, isosize, mplayer (video DVD detection)
+- burning and extracting: flac, mpg123, lame (for MP3 audio extracting), vorbis-tools, mencoder (DVD ripping)
+- video preview / audio listening: gmplayer
+
+Installation procedure:
+1) extract the archive containing the program sources,
+2) enter the directory containing the sources,
+3) run the command `cmake .'; options:
+	`-DCMAKE_INSTALL_PREFIX=/usr': to install into `/usr' instead of `/usr/local';
+	`-DGTK3=ON': to enable gtk+3 (defaults to gtk+2)
+4) run the command `make',
+5) run the command `make install'
+	(or `make install DESTDIR=absolute_path_to_somedir' to place the files
+	in a temporary location instead of the expected one).

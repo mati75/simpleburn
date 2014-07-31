@@ -1,3 +1,16 @@
+simpleburn (1.7.0-1) unstable; urgency=medium
+
+  * New upstream release. (LP: #1279659)
+  * debian/control:
+    + Bump Standards-Version to 3.9.5 (no changes needed).
+    + Build only for Linux.
+    + Drop mplayer-nogui and gmplayer from Recommends as these
+      packages are not available in Debian.
+    + Add mpg123, vorbis-tools and flac to Recommends.
+  * Update years in debian/copyright.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 27 Jul 2014 17:17:34 +0200
+
 simpleburn (1.6.5-1) unstable; urgency=low
 
   * Initial release. (Closes: #712637)

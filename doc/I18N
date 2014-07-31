@@ -1,0 +1,16 @@
+- add a new language:
+	(from inside "simpleburn" root directory)
+	# cd po
+	# msginit
+	(edit language (po) file)
+	
+- update translation files (if strings have changed): 
+	(from inside "simpleburn" root directory)
+	# mkdir build
+	# cd build
+	# cmake ..
+	# make update_po
+	# cd ..
+	# rm -rf build
+	# cd po
+	(edit language (po) file)
