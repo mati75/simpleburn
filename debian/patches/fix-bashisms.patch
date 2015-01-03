@@ -1,0 +1,588 @@
+Description: fix bashism in /bin/sh script
+Author: Georges Khaznadar <georges.khaznadar@free.fr>
+Bug-Debian: https://bugs.debian.org/772365
+
+--- a/scripts/simpleburn-detect.sh
++++ b/scripts/simpleburn-detect.sh
+@@ -1,6 +1,6 @@
+ #!/bin/sh
+ 
+-function detect() {
++detect() {
+ 	device=$1 #assumes it is a valid CD / DVD device
+ 	readcd dev=$device -fulltoc 2>/dev/null; rm -f  ~/toc.dat; rm -f toc.dat #wait for loading
+ 	if cdrom_id $device | grep -q "ID_CDROM_MEDIA"; then
+@@ -22,7 +22,7 @@ function detect() {
+ 				if [ -z "$mediacapacity" ]; then
+ 					mediacapacity=`cdrecord -atip dev=$device 2>&1 | grep "phys size:..." | tail -1 | sed 's/phys size:... \+//'`
+ 				fi
+-				let mediacapacity=mediacapacity*2048
++				mediacapacity=$((mediacapacity*2048))
+ 			fi
+ 			{ mplayer -dvd-device $device dvd://1 -identify -vo null -ao null -frames 0 2>&1 > /tmp/simpleburn-detect.$$ ;} 2>&1 >/dev/null
+ 			if grep -q "ID_DVD_TITLES" /tmp/simpleburn-detect.$$; then
+@@ -31,13 +31,13 @@ function detect() {
+ 				for title in `cat  /tmp/simpleburn-detect.$$ | grep "TITLE_[0-9]\+_LENGTH"`; do #for each title during more than 3'
+ 					titlenum=`echo $title | cut -d'_' -f4`
+ 					titlelenght=`echo $title | cut -d'=' -f2 | cut -f1 -d'.'`
+-					let minutes=titlelenght/60
+-					if (( minutes > 3 )); then
+-						if (( $titlenum != 1 )); then
++					minutes=$((titlelenght/60))
++					if [ $(( minutes > 3 )) = 1 ]; then
++						if [ $(( $titlenum != 1 )) = 1 ]; then
+ 							{ mplayer -dvd-device $device dvd://$titlenum -identify -vo null -ao null -frames 0 2>&1 > /tmp/simpleburn-detect.$$; } 2>&1 >/dev/null
+ 						fi
+ 						if grep -q "ID_AID" /tmp/simpleburn-detect.$$ && grep -q "ID_SID" /tmp/simpleburn-detect.$$; then
+-							let trackscount=trackscount+1
++							trackscount=$((trackscount+1))
+ 							if [ ! -z "$mediainfos" ]; then
+ 								mediainfos="$mediainfos\n"
+ 								detailedinfos="$detailedinfos\n"
+@@ -58,7 +58,7 @@ function detect() {
+ 									subdetailedinfos="$subdetailedinfos $languagename($languageid)"
+ 								done
+ 								mediainfos="$mediainfos;$mediasubinfos"
+-								if [ "$id" == "ID_AID" ]
++								if [ "$id" = "ID_AID" ]
+ 								then detailedinfos="$detailedinfos\n\tlanguages: $subdetailedinfos"
+ 								else detailedinfos="$detailedinfos\n\tsubtitles: $subdetailedinfos"
+ 								fi
+@@ -76,16 +76,17 @@ function detect() {
+ 				mediatype="cd"
+ 				if cdrom_id $device | grep -q "ID_CDROM_MEDIA_CD_R"; then
+ 				mediacapacity=`cdrecord -atip dev=$device 2>&1 | grep "ATIP start of lead out:" | sed 's/.*: \([0-9]\+\) .*/\1/'` 
+-					let mediacapacity=mediacapacity*2048
++					mediacapacity=$((mediacapacity*2048))
+ 				fi
+ 				if cdrom_id $device | grep -q "ID_CDROM_MEDIA_TRACK_COUNT_AUDIO"; then
+ 					mediacontent="audio"
+ 					mediasize=`cdrecord -toc dev=$device 2>&1 | grep "track:lout" | sed 's/track:lout lba: \+\([0-9]\+\) .*/\1/'`
+-					let mediasize=mediasize*2048
++					mediasize=$((mediasize*2048))
+ 					cdda2wav -J -L1 -v titles,toc -g -N -H dev=$device out-fd=1 2>/dev/null | tr -d '\200-\377'> /tmp/simpleburn-detect.$$ 
+ 					medialabel=`cat /tmp/simpleburn-detect.$$ | grep "^Album title:" | sed 's/^Album title: .\(.*\). from .*$/\1/'`
+ 					n=`cat /tmp/simpleburn-detect.$$ | grep "^T..:" | wc -l`
+-					for (( i=1; i<=$n; i++ )); do
++					i=1
++					while [ $((i<=$n)) =1 ]; do
+ 						line=`cat /tmp/simpleburn-detect.$$ | grep "^T..:" | sed -n $i\p`
+ 						if [ ! -z "$mediainfos" ]; then
+ 							mediainfos="$mediainfos\n"
+@@ -96,6 +97,7 @@ function detect() {
+ 						tracklength=`echo $line | sed 's/T..: \(.*\) title.*/\1/' | cut -f1 -d .`
+ 						detailedinfos="$detailedinfos""track $tracknum ($tracklength): $tracktitle"
+ 						mediainfos="$mediainfos$tracknum;$tracktitle;$tracklength"
++						i=$((i+1))
+ 					done
+ 					rm -f /tmp/simpleburn-detect.$$
+ 				fi
+@@ -105,8 +107,8 @@ function detect() {
+ 		fi
+ 	fi
+ 	
+-	let mediasize_=mediasize/1048576
+-	let mediacapacity_=mediacapacity/1048576
++	mediasize_=$((mediasize/1048576))
++	mediacapacity_=$((mediacapacity/1048576))
+ 	if [ $rewritablemedia -eq 1 ]
+ 	then rewritablemedia_="yes"
+ 	else rewritablemedia_="no"
+@@ -122,12 +124,12 @@ for tool in cdrom_id blkid isosize cdrec
+ done
+ 
+ #common parameters
+-if [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
++if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+ 	echo "usage: $0 [CD / DVD device]"
+ 	echo "example: $0 /dev/sr0"
+ 	exit
+ fi
+-if [ "$1" == "-cr" ]; then opt="-cr"; shift; fi
++if [ "$1" = "-cr" ]; then opt="-cr"; shift; fi
+ if [ -b "$1" ]
+ then device=$1; shift
+ else device=/dev/cdrom
+@@ -145,12 +147,12 @@ mediainfos="" #computer readable (-cr)
+ detailedinfos="" #human readable
+ 
+ #display infos if asked for
+-if [ `basename "'$0"` == "simpleburn-detect.sh" ]; then
++if [ `basename "'$0"` = "simpleburn-detect.sh" ]; then
+ 	detect $device
+-	if [ "$opt" == "-cr" ]
++	if [ "$opt" = "-cr" ]
+ 	then echo "$mediatype:$mediacontent:$mediacapacity:$mediasize:$rewritablemedia:$trackscount:$medialabel"
+-		echo -e $mediainfos
++		printf $mediainfos
+ 		echo ""
+ 	fi
+-	echo -e $detailedinfos
++	printf $detailedinfos
+ fi
+--- a/scripts/simpleburn-gauges.sh
++++ b/scripts/simpleburn-gauges.sh
+@@ -1,16 +1,16 @@
+ #!/bin/sh
+ 
+-function mencodergauge () {
++mencodergauge () {
+ 	totalsize=$1 #bytes
+ 	pass=$2
+ 	lockfile=$3
+ 	destination=$4
+ 	
+-	if (( $pass == 0 ))
++	if [ $pass = 0 ]
+ 	then cumul=0
+ 		passpercent=99 #1% for container
+ 	else passpercent=49
+-		if (( $pass == 1 ))
++		if [ $pass = 1 ]
+ 		then cumul=0
+ 		else cumul=50
+ 		fi
+@@ -18,23 +18,23 @@ function mencodergauge () {
+ 	echo $cumul	
+ 	while [ -f $lockfile ]; do
+ 		currentsize=`ls -l "$destination" | cut -f5 -d' '`
+-		let percent=(currentsize*passpercent/totalsize)+cumul
++		percent=$(((currentsize*passpercent/totalsize)+cumul))
+ 		echo $percent
+ 		sleep 1
+ 	done
+ }
+ 
+ 
+-function ddgauge() {
++ddgauge() {
+ 	totalsize=$1 #bytes
+ 	lockfile=$2
+ 	shift; shift; destination=$*
+ 	
+ 	while [ -f $lockfile ]; do
+ 		filesize=`ls -l "$destination" | cut -f5 -d' '`
+-		let filesize=filesize/1024
+-		let percent=(filesize*100)/totalsize
+-		let percent=percent%100
++		filesize=$((filesize/1024))
++		percent=$(((filesize*100)/totalsize))
++		percent=$((percent%100))
+ 		echo $percent
+ 		sleep 1
+ 	done
+--- a/scripts/simpleburn.sh
++++ b/scripts/simpleburn.sh
+@@ -1,14 +1,14 @@
+ #!/bin/sh
+ 
+-function printusage() {
++printusage() {
+ 	echo "error: invalid parameters"
+ 	echo ""
+ 	echo "usage: $0 [CD/DVD device] blank [(fast|all)]"
+ 	echo "usage: $0 [CD/DVD device] extract /path/to/iso_file"
+-	echo -e "usage: $0 [CD/DVD device] extract /path/to/audio_dir\n\t[format(wav|flac|ogg|mp3)\n\t\t[tracks(1,2,4-6,...)]\n\t]"
+-	echo -e "usage: $0 [CD/DVD device] extract /path/to/video_file title\n\t[quality(high|normal)\n\t\t[language(country-code/aid)\n\t\t\t[subtitles(-1|country-code/sid)\n\t\t\t\t[cropinfos(W:H:X:Y)]\n\t\t\t]\n\t\t]\n\t]"
++	printf "usage: $0 [CD/DVD device] extract /path/to/audio_dir\n\t[format(wav|flac|ogg|mp3)\n\t\t[tracks(1,2,4-6,...)]\n\t]"
++	printf "usage: $0 [CD/DVD device] extract /path/to/video_file title\n\t[quality(high|normal)\n\t\t[language(country-code/aid)\n\t\t\t[subtitles(-1|country-code/sid)\n\t\t\t\t[cropinfos(W:H:X:Y)]\n\t\t\t]\n\t\t]\n\t]"
+ 	echo "usage: $0 [CD/DVD device] burn /path/to/iso_file"
+-	echo -e "usage: $0 [CD/DVD device] burn /path/to/audio_dir"
++	printf "usage: $0 [CD/DVD device] burn /path/to/audio_dir"
+ 	echo "usage: $0 [CD/DVD device] burn /path/to/data_dir"
+ 	echo "usage: $0 [CD/DVD device (source)] copy [CD/DVD device (copy)]"
+ 	echo ""
+@@ -17,16 +17,16 @@ function printusage() {
+ }
+ 
+ 
+-function extractiso() {
++extractiso() {
+ 	device=$1
+ 	destination=$2
+ 
+-	let blockscount=mediasize/2048
+-	let tracksize=mediasize/1024
++	blockscount=$((mediasize/2048))
++	tracksize=$((mediasize/1024))
+ 	LOCKFILE="/tmp/simpleburn-extract.$$"
+ 	rm -f "$destination"
+ 	touch $LOCKFILE
+-	if [ "$opt" == "-cr" ]; then { sleep 5; simpleburn-gauges.sh dd $tracksize $LOCKFILE "$destination"; } & fi
++	if [ "$opt" = "-cr" ]; then { sleep 5; simpleburn-gauges.sh dd $tracksize $LOCKFILE "$destination"; } & fi
+ 	dd if=$device bs=2048 count=$blockscount of="$destination"
+ 	status=$?
+ 	rm -f $LOCKFILE
+@@ -34,7 +34,7 @@ function extractiso() {
+ }
+ 
+ 
+-function expandtracks() {
++expandtracks() {
+ 	tracksrange=$1
+ 	tracks=""
+ 	while [ ! -z "$tracksrange" ]; do
+@@ -43,8 +43,10 @@ function expandtracks() {
+ 			firsttrack=`echo $expd | cut -f1 -d-`
+ 			lasttrack=`echo $expd | cut -f2 -d-`
+ 			expd=""
+-			for ((i=firsttrack; i<=lasttrack; i++)); do
++			i=$firsttrack
++			while [ $i -le $lasttrack ]; do
+ 				expd="$expd $i"
++				i=$((i+1))
+ 			done
+ 			tracks="$tracks$expd"
+ 		else
+@@ -59,67 +61,67 @@ function expandtracks() {
+ }
+ 
+ 
+-function extractaudio() {
++extractaudio() {
+ 	device=$1
+ 	destination=$2
+ 	format=$3
+ 	shift; shift; shift; tracks=$*
+ 	
+ 	total=0; for track in $tracks; do
+-		tracklength=`echo -e $mediainfos | grep "^$track;" | cut -f3 -d';'`
++		tracklength=`printf $mediainfos | grep "^$track;" | cut -f3 -d';'`
+ 		minutes=`echo $tracklength | cut -f1 -d:`
+ 		seconds=`echo $tracklength | cut -f2 -d: | sed 's/^0//'`
+-		let seconds=minutes*60+seconds
+-		lengths[$track]=seconds
+-		let total=total+seconds
++		seconds=$((minutes*60+seconds))
++		lengths$track=seconds
++		total=$((total+seconds))
+ 	done
+ 	cd "$destination"
+ 	FIFOFILE="/tmp/simpleburn-extract.$$"; mkfifo $FIFOFILE
+-	let totaldone=0
++	totaldone=0
+ 	for track in $tracks; do
+-		let previouspercent=totaldone*100/total
+-		let trackpercent=lengths[$track]*100/total
+-		title="$track-"`echo -e $mediainfos | grep "^$track;" | cut -f2 -d';' | sed 's@/@-@g'`
+-		if (( $track < 10 )); then title="0$title"; fi
++		previouspercent=$((totaldone*100/total))
++		trackpercent=$((lengths$track*100/total))
++		title="$track-"`printf $mediainfos | grep "^$track;" | cut -f2 -d';' | sed 's@/@-@g'`
++		if [ $track -lt 10 ]; then title="0$title"; fi
+ 		case $format in
+-		"wav")  if [ "$opt" == "-cr" ]; then
++		"wav")  if [ "$opt" = "-cr" ]; then
+ 				cdda2wav dev=$device -t $track "$title.wav" 2>$FIFOFILE | \
+ 					simpleburn-gauges cdda2wav $previouspercent $trackpercent $FIFOFILE
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			else
+ 				cdda2wav dev=$device -t $track "$title.wav"
+ 				status=$?
+ 			fi
+ 			;;
+-		"flac")  if [ "$opt" == "-cr" ]; then
++		"flac")  if [ "$opt" = "-cr" ]; then
+ 				cdda2wav dev=$device -t $track - 2>$FIFOFILE | flac --totally-silent -f -o "$title.flac" - | \
+ 					simpleburn-gauges cdda2wav $previouspercent $trackpercent $FIFOFILE
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			else
+ 				cdda2wav dev=$device -t $track - 2>/dev/null | flac -f -o "$title.flac" -
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			fi
+ 			;;
+-		"ogg")  if [ "$opt" == "-cr" ]; then
++		"ogg")  if [ "$opt" = "-cr" ]; then
+ 				cdda2wav dev=$device -t $track - 2>$FIFOFILE | oggenc -b 256 -Q -o "$title.ogg" - | \
+ 					simpleburn-gauges cdda2wav $previouspercent $trackpercent $FIFOFILE
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			else
+ 				cdda2wav dev=$device -t $track - 2>/dev/null | oggenc -b 256 -o "$title.ogg" -
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			fi
+ 			;;
+-		"mp3")  if [ "$opt" == "-cr" ]; then
++		"mp3")  if [ "$opt" = "-cr" ]; then
+ 				cdda2wav dev=$device -t $track - 2>$FIFOFILE | lame -b 256 --quiet - "$title.mp3" | \
+ 					simpleburn-gauges cdda2wav $previouspercent $trackpercent $FIFOFILE
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			else
+ 				cdda2wav dev=$device -t $track - | lame -b 256 - "$title.mp3"
+-				status=${PIPESTATUS[0]}
++				status=$?
+ 			fi
+ 			;;
+ 		esac
+-		let totaldone=totaldone+lengths[$track]
++		totaldone=$((totaldone+lengths$track))
+ 	done
+ 	rm -f $FIFOFILE
+ 	cd - >/dev/null
+@@ -127,7 +129,7 @@ function extractaudio() {
+ }
+ 
+ 
+-function extractvideo() {
++extractvideo() {
+ 	device=$1
+ 	title=$2
+ 	destination=$3
+@@ -144,35 +146,35 @@ function extractvideo() {
+ 	fi
+ 	VIDEORATE=896; HQVIDEORATE=1856
+ 	
+-	titleinfos=`echo -e $mediainfos | grep "^$title;"`
++	titleinfos=`printf $mediainfos | grep "^$title;"`
+ 	length=`echo $titleinfos | cut -f2 -d';'`
+ 	LOCKFILE="/tmp/simpleburn-extract.$$"
+ 	cd "`dirname \"$destination\"`"
+ 	destination=`basename "$destination"`
+-	if [ "$opt" == "-cr" ]; then
++	if [ "$opt" = "-cr" ]; then
+ 			msglevel="-msglevel all=-1"
+ 	fi
+ 	aid=`echo $titleinfos | cut -f3 -d';' | sed 's/,/\n/g' | grep "$audio" | cut -f1 -d'/' | head -n1`
+-	if [ "$subtitles" == "-1" ]
++	if [ "$subtitles" = "-1" ]
+ 	then subtitlescmd="-vobsubout nosubs"
+ 	else sid=`echo $titleinfos | cut -f4 -d';' | sed 's/,/\n/g' | grep "$subtitles" | cut -f1 -d'/'  | head -n1`
+ 		subtitlescmd="-vobsubout $destination -sid $sid"
+ 	fi
+-	if [ "$quality" == "normal" ]; then
++	if [ "$quality" = "normal" ]; then
+ 		audiorate=$AUDIORATE
+ 		videorate=$VIDEORATE
+ 	else
+ 		audiorate=$HQAUDIORATE
+ 		videorate=$HQVIDEORATE
+ 	fi
+-	let totalrate=(audiorate+videorate)*1000/8 #kbits -> bytes
+-	let totalsize=length*totalrate
++	totalrate=$(((audiorate+videorate)*1000/8 #kbits -> bytes))
++	totalsize=$((length*totalrate))
+ 	if [ ! -z "$cropinfos" ]; then
+ 		cropinfos="-vf crop=$cropinfos"
+ 	fi
+ 	rm -f divx2pass.log
+ 	touch $LOCKFILE-1
+-	if [ "$opt" == "-cr" ]; then { sleep 5; simpleburn-gauges.sh mencoder $totalsize 1 $LOCKFILE-1 "$destination"; } & fi
++	if [ "$opt" = "-cr" ]; then { sleep 5; simpleburn-gauges.sh mencoder $totalsize 1 $LOCKFILE-1 "$destination"; } & fi
+ 	
+ 	{ mencoder $msglevel -dvd-device $device dvd://$title -aid $aid $OAC_STRING=$audiorate \
+ 		-ovc lavc -lavcopts vcodec=mpeg4:vbitrate=$videorate:v4mv:mbd=2:trell:turbo:autoaspect:vpass=1 $cropinfos \
+@@ -180,15 +182,15 @@ function extractvideo() {
+ 	rm -f $LOCKFILE-1
+ 	
+ 	touch $LOCKFILE-2
+-	if [ "$opt" == "-cr" ]; then { sleep 5; simpleburn-gauges.sh mencoder $totalsize 2 $LOCKFILE-2 "$destination"; } & fi
++	if [ "$opt" = "-cr" ]; then { sleep 5; simpleburn-gauges.sh mencoder $totalsize 2 $LOCKFILE-2 "$destination"; } & fi
+ 	{ mencoder $msglevel -dvd-device $device dvd://$title -aid $aid $OAC_STRING=$audiorate $subtitlescmd \
+ 		-ovc lavc -lavcopts vcodec=mpeg4:vbitrate=$videorate:v4mv:mbd=2:trell:autoaspect:vpass=2 $cropinfos \
+ 		-o "$destination"; } 1>&2 2>/dev/null
+ 	status=$?
+ 	rm -f $LOCKFILE-2
+ 	rm -f divx2pass.log
+-	if [ "$subtitles" == "-1" ]; then
+-		rm -f nosubs.{idx,sub}
++	if [ "$subtitles" = "-1" ]; then
++		rm -f nosubs.idx nosubs.sub
+ 	fi
+ 	
+ 	cd - >/dev/null
+@@ -196,15 +198,15 @@ function extractvideo() {
+ }
+ 
+ 
+-function burniso() {
++burniso() {
+ 	device=$1
+ 	source=$2
+ 	
+ 	tracksize=`ls -l "$source" | cut -f5 -d' '`
+-	let tracksize=tracksize/1048576 #MB
+-	if [ "$opt" == "-cr" ]; then
++	tracksize=$((tracksize/1048576)) #MB
++	if [ "$opt" = "-cr" ]; then
+ 		cdrecord -v -eject gracetime=3 dev=$device -pad "$source" | simpleburn-gauges cdrecord $tracksize
+-		status=${PIPESTATUS[0]}
++		status=$?
+ 	else
+ 		cdrecord -v -eject gracetime=3 dev=$device -pad "$source"
+ 		status=$?
+@@ -213,7 +215,7 @@ function burniso() {
+ }
+ 
+ 
+-function burnaudio() {
++burnaudio() {
+ 	device=$1
+ 	source=$2
+ 	
+@@ -237,12 +239,12 @@ function burnaudio() {
+ 	audiosizes=""
+ 	totalsize=0
+ 	for audiosize in `ls -l "$source"/*.wav | cut -f5 -d' '`; do
+-		let audiosize=audiosize/1048576
++		audiosize=$((audiosize/1048576))
+ 		audiosizes="$audiosizes$audiosize "
+-		let totalsize=totalsize+audiosize
++		totalsize=$((totalsize+audiosize))
+ 	done
+-	let totalsize=totalsize*913046 #1024x1024x2048/2352
+-	if (( $totalsize > $mediacapacity )); then #final check due to conversion
++	totalsize=$((totalsize*913046)) #1024x1024x2048/2352
++	if [ $totalsize -gt $mediacapacity ]; then #final check due to conversion
+ 		echo "error: not enough space on CD/DVD media"
+ 		exit 3
+ 	fi
+@@ -250,25 +252,25 @@ function burnaudio() {
+ 	cd "$source"
+ 	#notice: options -useinfo -text are ignored by cdrskin
+ 	cdrecord -eject -v speed=0 gracetime=3 dev=$device -dao -audio -pad -useinfo -text *.wav | simpleburn-gauges cdrecord $audiosizes
+-	status=${PIPESTATUS[0]}
++	status=$?
+ 	cd - >/dev/null
+ 	exit $status
+ }
+ 
+ 
+-function burndata() {
++burndata() {
+ 	device=$1
+ 	source=$2
+ 	
+ 	label=`basename "$source" | sed 's/ /_/g' | cut -c1-32`
+ 	tsize=`mkisofs -J -r -N -d -hide-rr-moved -print-size "$source"`
+-	let tracksize=tsize/512 #blocks => MB
+-	if [ "$opt" == "-cr" ]; then
++	tracksize=$((tsize/512)) #blocks => MB
++	if [ "$opt" = "-cr" ]; then
+ 		mkisofs -J -r -N -d -hide-rr-moved -V "$label" "$source" | cdrecord -v -eject gracetime=3 dev=$device driveropts=burnfree tsize=$tsize\s -data -pad - | simpleburn-gauges cdrecord $tracksize
+-		status=${PIPESTATUS[0]}&&${PIPESTATUS[1]}
++		status=$?
+ 	else
+ 		mkisofs -J -r -N -d -hide-rr-moved -V "$label" "$source" | cdrecord -v -eject gracetime=3 dev=$device driveropts=burnfree tsize=$tsize\s -data -pad -
+-		status=${PIPESTATUS[0]}&&${PIPESTATUS[1]}
++		status=$?
+ 	fi
+ 	exit $status
+ }
+@@ -283,19 +285,20 @@ for tool in cdrom_id blkid isosize cdrec
+ done
+ 
+ #common parameters
+-if [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
++if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+ 	echo "usage: $0 [CD / DVD device]"
+ 	echo "example: $0 /dev/sr0"
+ 	exit
+ fi
+-if [ "$1" == "-cr" ]; then opt="-cr"; shift; fi
++if [ "$1" = "-cr" ]; then opt="-cr"; shift; fi
+ if [ -b "$1" ]
+ then device=$1; shift
+ else device=/dev/cdrom
+ fi
+ action=$1; shift
+ 
+-source simpleburn-detect.sh $device
++. simpleburn-detect.sh 
++detect $device
+ 
+ case $action in
+ 	"blank")
+@@ -316,7 +319,7 @@ case $action in
+ 	"extract")
+ 		destination=$1; shift
+ 		detect $device
+-		if [ "$mediatype" == "none" ] || [ "$mediacontent" == "blank" ] || [ "$mediacontent" == "udf" ]; then
++		if [ "$mediatype" = "none" ] || [ "$mediacontent" = "blank" ] || [ "$mediacontent" = "udf" ]; then
+ 			echo "error: can't extract from media ($mediatype/$mediacontent)"
+ 			exit 3
+ 		fi
+@@ -324,13 +327,13 @@ case $action in
+ 			"video")
+ 				title=$1; quality=$2; audio=$3; subtitles=$4; cropinfos=$5
+ 				if [ -z "$quality" ]; then quality="normal"; fi
+-				if [ -z "$audio" ]; then if [ "$LANG" == "C" ]; then audio="en"; else audio=`echo $LANG | cut -c1-2`; fi; fi
++				if [ -z "$audio" ]; then if [ "$LANG" = "C" ]; then audio="en"; else audio=`echo $LANG | cut -c1-2`; fi; fi
+ 				if [ -z "$subtitles" ]; then subtitles="-1"; fi
+ 				if [ -z "$cropinfo" ]; then cropinfos=`mplayer -dvd-device $device dvd://$title -ao null -ss 15 -frames 120 -vf cropdetect -vo null 2>&1 | grep "crop=720:" | tail -n1 | cut -f2 -d'=' | cut -f1 -d')'`; fi
+ 				if [ -z "$destination" ] || [ ! -d `dirname "$destination"` ] || [ -z "$title" ] || ( [ "$quality" != "normal" ] && [ "$quality" != "high" ] ); then
+ 					printusage
+ 				fi
+-				titleinfos=`echo -e $mediainfos | grep "^$title;"`
++				titleinfos=`printf $mediainfos | grep "^$title;"`
+ 				if [ -z "$titleinfos" ]; then
+ 					echo "error: title '$title' not available"
+ 					exit 3
+@@ -356,7 +359,7 @@ case $action in
+ 				#all ok
+ 				tracks=`expandtracks $tracks`
+ 				for track in $tracks; do
+-					if (( $track < 1 )) || (( $track > $trackscount )); then echo "error: track '$track' not available"; exit 3; fi
++					if [ $track -lt 1 ] || [ $track -gt $trackscount ]; then echo "error: track '$track' not available"; exit 3; fi
+ 				done
+ 				extractaudio $device "$destination" $format $tracks
+ 				;;
+@@ -374,7 +377,7 @@ case $action in
+ 		if [ -z "$source" ] || ( [ ! -f "$source" ] && [ ! -d "$source" ] ); then
+ 			printusage
+ 		fi
+-		if [ "$mediacontent" != "blank" ] && (( rewritablemedia == 0 )); then
++		if [ "$mediacontent" != "blank" ] && [ $rewritablemedia = 0 ]; then
+ 			echo "error: can't burn on media ($mediatype/$mediacontent)"
+ 			exit 3
+ 		fi
+@@ -388,11 +391,11 @@ case $action in
+ 			datasize=`ls -l "$source" | cut -f5 -d' '`
+ 		else
+ 			datasize=`du -bs "$source" | sed 's/\t.*//'`
+-			if [ "$mediatype" != "dvd" ] && (( `ls -l "$source"/*.wav 2>/dev/null | wc -l` != 0 )); then
+-				let datasize=datasize*2048/2352
++			if [ "$mediatype" != "dvd" ] && [ `ls -l "$source"/*.wav 2>/dev/null | wc -l` -ne 0 ]; then
++				datasize=$((datasize*2048/2352))
+ 			fi
+ 		fi
+-		if (( $datasize > $mediacapacity )); then
++		if [ $datasize -gt $mediacapacity ]; then
+ 			echo "error: not enough space on CD/DVD media"
+ 			exit 3
+ 		fi
+@@ -402,13 +405,13 @@ case $action in
+ 			read response
+ 			if [ "$response" != "y" ]; then exit; fi
+ 		fi
+-		if [ "$mediacontent" != "blank" ] && [ "$mediatype" == "cd" ]; then
++		if [ "$mediacontent" != "blank" ] && [ "$mediatype" = "cd" ]; then
+ 			cdrecord gracetime=3 dev=$device blank=fast
+ 		fi
+ 		if [ -f "$source" ]; then
+ 			burniso $device $source
+ 		else
+-			if [ "$mediatype" == "dvd" ] || (( `ls -l "$source"/*.wav 2>/dev/null | wc -l` == 0 ))
++			if [ "$mediatype" = "dvd" ] || [ `ls -l "$source"/*.wav 2>/dev/null | wc -l` = 0 ]
+ 			then burndata $device "$source"
+ 			else burnaudio $device "$source"
+ 			fi
+@@ -421,12 +424,12 @@ case $action in
+ 		#audio: cdrdao copy --fast-toc --on-the-fly --source-device $cdreader --device $cdwriter 2>&1 | simpleburn-gauges cdrdao
+ 		#audio: cdda2wav dev=$cdreader -no-infofile -B -Oraw - 2>/dev/null | cdrecord -v gracetime=3 dev=$cdwriter -dao -audio -useinfo -text *.inf | simpleburn-gauges cdrecord $trackslengths
+ 		
+-		#status=${PIPESTATUS[0]}
++		#status=$?
+ 		;;
+ 	"abort")
+ 		pid=$1
+ 		pslist=""
+-		function listps () {
++		listps () {
+ 			pid=$1
+ 			
+ 			pslist="$pid $pslist"

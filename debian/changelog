@@ -1,3 +1,12 @@
+simpleburn (1.7.0-2) unstable; urgency=high
+
+  * Add patch to fix bashism in /bin/sh script -- thanks
+    Georges Khaznadar <georges.khaznadar@free.fr> for help.
+    (Closes: #772365)
+  * Bump Standards-Version to 3.9.6 (no changes needed).
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 31 Dec 2014 15:22:53 +0100
+
 simpleburn (1.7.0-1) unstable; urgency=medium
 
   * New upstream release. (LP: #1279659)
