@@ -26,10 +26,3 @@ Bug-Debian: https://bugs.debian.org/772365
  
  function printusage() {
  	echo "error: invalid parameters"
-@@ -439,4 +439,4 @@ case $action in
- 		kill $pslist
- 		;;
- 	*) printusage
--esac
-\ No newline at end of file
-+esac
