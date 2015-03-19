@@ -1,0 +1,42 @@
+simpleburn (1.7.3-1) UNRELEASED; urgency=medium
+
+  * New upstream release. (Closes: #764729)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 19 Mar 2015 12:36:59 +0100
+
+simpleburn (1.7.0-3) unstable; urgency=medium
+
+  * Drop fix-bashisms.patch.
+  * Add patch to convert all /bin/sh scripts to /bin/bash.
+    (Closes: #772365)
+  * Update dates in debian/copyright.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 14 Feb 2015 15:46:32 +0100
+
+simpleburn (1.7.0-2) unstable; urgency=medium
+
+  * Add patch to fix bashism in /bin/sh script -- thanks to
+    Georges Khaznadar <georges.khaznadar@free.fr> for the help.
+    (Closes: #772365)
+  * Bump Standards-Version to 3.9.6 (no changes needed).
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 31 Dec 2014 15:22:53 +0100
+
+simpleburn (1.7.0-1) unstable; urgency=medium
+
+  * New upstream release. (LP: #1279659)
+  * debian/control:
+    + Bump Standards-Version to 3.9.5 (no changes needed).
+    + Build only for Linux.
+    + Drop mplayer-nogui and gmplayer from Recommends as these
+      packages are not available in Debian.
+    + Add mpg123, vorbis-tools and flac to Recommends.
+  * Update years in debian/copyright.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 27 Jul 2014 17:17:34 +0200
+
+simpleburn (1.6.5-1) unstable; urgency=low
+
+  * Initial release. (Closes: #712637)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 24 Jul 2013 12:38:07 +0200
