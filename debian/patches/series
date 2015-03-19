@@ -1,2 +1,2 @@
 fix_desktop.patch
-fix-bashisms.patch
+use-sh-as-bash.patch

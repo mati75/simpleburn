@@ -1,7 +1,16 @@
-simpleburn (1.7.0-2) unstable; urgency=high
+simpleburn (1.7.0-3) unstable; urgency=medium
 
-  * Add patch to fix bashism in /bin/sh script -- thanks
-    Georges Khaznadar <georges.khaznadar@free.fr> for help.
+  * Drop fix-bashisms.patch.
+  * Add patch to convert all /bin/sh scripts to /bin/bash.
+    (Closes: #772365)
+  * Update dates in debian/copyright.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 14 Feb 2015 15:46:32 +0100
+
+simpleburn (1.7.0-2) unstable; urgency=medium
+
+  * Add patch to fix bashism in /bin/sh script -- thanks to
+    Georges Khaznadar <georges.khaznadar@free.fr> for the help.
     (Closes: #772365)
   * Bump Standards-Version to 3.9.6 (no changes needed).
 
