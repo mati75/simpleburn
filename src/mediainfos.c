@@ -140,7 +140,8 @@ void audioinfos(gchar **infolines) {
 	for (gint i=0; strlen(infolines[i+1]) != 0; i++) {
 		gchar **trackinfos = g_strsplit(infolines[i+1], ";", 0);
 		gtk_list_store_append(ui.model_tracks, &iter);
-		gtk_list_store_set(ui.model_tracks, &iter, 0, TRUE, 1, g_ascii_strtoull(trackinfos[0], NULL, 10), 2, trackinfos[1], 3, trackinfos[2], -1);
+		//~ gtk_list_store_set(ui.model_tracks, &iter, 0, TRUE, 1, g_ascii_strtoull(trackinfos[0], NULL, 10), 2, trackinfos[1], 3, trackinfos[2], -1);
+		gtk_list_store_set(ui.model_tracks, &iter, 0, TRUE, 1, i+1, 2, trackinfos[1], 3, trackinfos[2], -1);
 		g_strfreev(trackinfos);
 	}
 }

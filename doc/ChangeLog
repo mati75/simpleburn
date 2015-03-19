@@ -1,3 +1,12 @@
+2015-03-18, version 1.7.3:
+	- media can now be unmounted using udisksctl
+	- directory are now burned with UDF filesystem, as video DVD if appropriate
+2015-01-26, version 1.7.2:
+	- fixed missing audio titles and lenghts in GUI
+	- detection doesn't crash anymore when mplayer is missing
+2014-09-31, version 1.7.1:
+	- fixed video DVD detection when ID_AID / ID_SID are not present
+	- fixed desktop file thanks to Christopher Meng
 2014-05-31, version 1.7.0: updated serbian translation (thanks to Jay Alexander Fleming)
 2014-02-19, version 1.7.0-rc1:
 	- fixed capacity detection on new DVD/RW

@@ -261,13 +261,17 @@ function burndata() {
 	source=$2
 	
 	label=`basename "$source" | sed 's/ /_/g' | cut -c1-32`
-	tsize=`mkisofs -J -r -N -d -hide-rr-moved -print-size "$source"`
+	if [ -f "$source/VIDEO_TS/VIDEO_TS.IFO" ];
+	then udfopt="-dvd-video"
+	else udfopt="-udf"
+	fi
+	tsize=`mkisofs -J -r -N -d -hide-rr-moved $udfopt -print-size "$source"`
 	let tracksize=tsize/512 #blocks => MB
 	if [ "$opt" == "-cr" ]; then
-		mkisofs -J -r -N -d -hide-rr-moved -V "$label" "$source" | cdrecord -v -eject gracetime=3 dev=$device driveropts=burnfree tsize=$tsize\s -data -pad - | simpleburn-gauges cdrecord $tracksize
+		mkisofs -J -r -N -d -hide-rr-moved $udfopt -V "$label" "$source" | cdrecord -v -eject gracetime=3 dev=$device driveropts=burnfree tsize=$tsize\s -data -pad - | simpleburn-gauges cdrecord $tracksize
 		status=${PIPESTATUS[0]}&&${PIPESTATUS[1]}
 	else
-		mkisofs -J -r -N -d -hide-rr-moved -V "$label" "$source" | cdrecord -v -eject gracetime=3 dev=$device driveropts=burnfree tsize=$tsize\s -data -pad -
+		mkisofs -J -r -N -d -hide-rr-moved $udfopt -V "$label" "$source" | cdrecord -v -eject gracetime=3 dev=$device driveropts=burnfree tsize=$tsize\s -data -pad -
 		status=${PIPESTATUS[0]}&&${PIPESTATUS[1]}
 	fi
 	exit $status
@@ -379,7 +383,7 @@ case $action in
 			exit 3
 		fi
 		if mount | grep -q "^$device "; then
-			if ! umount $device; then
+			if ! udisksctl unmount -b $device || umount $device; then
 				echo "error: media can't be unmounted"
 				exit 3
 			fi
