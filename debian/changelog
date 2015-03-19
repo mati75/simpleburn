@@ -3,6 +3,8 @@ simpleburn (1.7.3-1) UNRELEASED; urgency=medium
   * New upstream release. (Closes: #764729)
   * Remove debian/patches/fix_desktop.patch -- included upstream.
   * Refresh debian/patches/use-sh-as-bash.patch.
+  * debian/control:
+    + add icedax to depends. (LP: #1417294)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 19 Mar 2015 12:36:59 +0100
 
