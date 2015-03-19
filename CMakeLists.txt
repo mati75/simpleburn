@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 set (PROJECT_NAME "simpleburn")
 project (${PROJECT_NAME})
-set (PROJECT_VERSION "1.7.0")
+set (PROJECT_VERSION "1.7.3")
 
 add_subdirectory (po)
 add_subdirectory (src)

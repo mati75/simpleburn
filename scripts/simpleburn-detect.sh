@@ -24,19 +24,19 @@ function detect() {
 				fi
 				let mediacapacity=mediacapacity*2048
 			fi
-			{ mplayer -dvd-device $device dvd://1 -identify -vo null -ao null -frames 0 2>&1 > /tmp/simpleburn-detect.$$ ;} 2>&1 >/dev/null
-			if grep -q "ID_DVD_TITLES" /tmp/simpleburn-detect.$$; then
-				mediacontent="video"
-				trackscount=0
-				for title in `cat  /tmp/simpleburn-detect.$$ | grep "TITLE_[0-9]\+_LENGTH"`; do #for each title during more than 3'
-					titlenum=`echo $title | cut -d'_' -f4`
-					titlelenght=`echo $title | cut -d'=' -f2 | cut -f1 -d'.'`
-					let minutes=titlelenght/60
-					if (( minutes > 3 )); then
-						if (( $titlenum != 1 )); then
-							{ mplayer -dvd-device $device dvd://$titlenum -identify -vo null -ao null -frames 0 2>&1 > /tmp/simpleburn-detect.$$; } 2>&1 >/dev/null
-						fi
-						if grep -q "ID_AID" /tmp/simpleburn-detect.$$ && grep -q "ID_SID" /tmp/simpleburn-detect.$$; then
+			if which mplayer >/dev/null 2>&1; then
+				{ mplayer -dvd-device $device dvd://1 -identify -vo null -ao null -frames 0 2>&1 > /tmp/simpleburn-detect.$$ ;} 2>&1 >/dev/null
+				if grep -q "ID_DVD_TITLES" /tmp/simpleburn-detect.$$; then
+					mediacontent="video"
+					trackscount=0
+					for title in `cat  /tmp/simpleburn-detect.$$ | grep "TITLE_[0-9]\+_LENGTH"`; do #for each title during more than 3'
+						titlenum=`echo $title | cut -d'_' -f4`
+						titlelenght=`echo $title | cut -d'=' -f2 | cut -f1 -d'.'`
+						let minutes=titlelenght/60
+						if (( minutes > 3 )); then
+							if (( $titlenum != 1 )); then
+								{ mplayer -dvd-device $device dvd://$titlenum -identify -vo null -ao null -frames 0 2>&1 > /tmp/simpleburn-detect.$$; } 2>&1 >/dev/null
+							fi
 							let trackscount=trackscount+1
 							if [ ! -z "$mediainfos" ]; then
 								mediainfos="$mediainfos\n"
@@ -45,32 +45,47 @@ function detect() {
 							mediainfos="$mediainfos$titlenum;$titlelenght"
 							detailedinfos="$detailedinfos""title: $titlenum ($minutes')"
 							for id in ID_AID ID_SID; do #audio & subtitles
-								mediasubinfos=""
-								subdetailedinfos=""
-								for language in `cat /tmp/simpleburn-detect.$$ | grep "$id"`; do
-									if [ ! -z "$mediasubinfos" ]; then
-										mediasubinfos="$mediasubinfos,"
-										subdetailedinfos="$subdetailedinfos, "
+								if grep -q "$id" /tmp/simpleburn-detect.$$; then
+									mediasubinfos=""
+									subdetailedinfos=""
+									for language in `cat /tmp/simpleburn-detect.$$ | grep "$id"`; do
+										if [ ! -z "$mediasubinfos" ]; then
+											mediasubinfos="$mediasubinfos,"
+											subdetailedinfos="$subdetailedinfos, "
+										fi
+										languageid=`echo $language | cut -d'_' -f3`
+										languagename=`echo $language | cut -d'=' -f2 | cut -f1 -d'.'`
+										mediasubinfos="$mediasubinfos$languageid/$languagename"
+										subdetailedinfos="$subdetailedinfos $languagename($languageid)"
+									done
+									mediainfos="$mediainfos;$mediasubinfos"
+									if [ "$id" == "ID_AID" ]
+									then detailedinfos="$detailedinfos\n\tlanguages: $subdetailedinfos"
+									else detailedinfos="$detailedinfos\n\tsubtitles: $subdetailedinfos"
 									fi
-									languageid=`echo $language | cut -d'_' -f3`
-									languagename=`echo $language | cut -d'=' -f2 | cut -f1 -d'.'`
-									mediasubinfos="$mediasubinfos$languageid/$languagename"
-									subdetailedinfos="$subdetailedinfos $languagename($languageid)"
-								done
-								mediainfos="$mediainfos;$mediasubinfos"
-								if [ "$id" == "ID_AID" ]
-								then detailedinfos="$detailedinfos\n\tlanguages: $subdetailedinfos"
-								else detailedinfos="$detailedinfos\n\tsubtitles: $subdetailedinfos"
+								else
+									if [ "$id" == "ID_AID" ]; then #failback
+										mediasubinfos=""
+										for id in `cat /tmp/simpleburn-detect.$$ | grep "ID_AUDIO_ID" | sort -u | cut -f2 -d=`; do
+											if [ ! -z "$mediasubinfos" ]; then
+												mediasubinfos="$mediasubinfos,"
+											fi
+											mediasubinfos="$mediasubinfos$id/??"
+										done
+										mediainfos="$mediainfos;$mediasubinfos"
+									else
+										mediainfos="$mediainfos;"
+									fi
 								fi
 							done
 							cropinfos=`mplayer -dvd-device $device dvd://$titlenum -ao null -ss 15 -frames 120 -vf cropdetect -vo null 2>&1 | grep "crop=720:" | tail -n1 | cut -f2 -d'=' | cut -f1 -d')'`
 							mediainfos="$mediainfos;$cropinfos"
 							detailedinfos="$detailedinfos""title: $titlenum ($minutes') - crop=$cropinfos"
 						fi
-					fi
-				done
+					done
+				fi
+				rm -f /tmp/simpleburn-detect.$$
 			fi
-			rm -f /tmp/simpleburn-detect.$$
 		else #CD
 			if cdrom_id $device | grep -q ID_CDROM_MEDIA_CD; then
 				mediatype="cd"
@@ -117,7 +132,7 @@ function detect() {
 
 #tools detection
 PATH=$PATH:/lib/udev:/usr/lib/udev:/sbin:/usr/sbin
-for tool in cdrom_id blkid isosize cdrecord cdda2wav mplayer; do
+for tool in cdrom_id blkid isosize cdrecord cdda2wav; do
 	if ! which $tool >/dev/null 2>&1; then echo "error: '$tool' is missing"; exit 2; fi
 done
 
