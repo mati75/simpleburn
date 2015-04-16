@@ -1,13 +1,14 @@
-simpleburn (1.7.3-1) UNRELEASED; urgency=medium
+simpleburn (1.7.3-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #764729)
   * Remove debian/patches/fix_desktop.patch -- included upstream.
   * Refresh debian/patches/use-sh-as-bash.patch.
   * debian/control:
-    + add icedax to depends. (LP: #1417294)
+    + Add icedax to Depends. (LP: #1417294)
   * Update debian/watch for tar.gz archives.
+  * Remove debian/source/options -- no longer needed.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 19 Mar 2015 12:36:59 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Thu, 16 Apr 2015 18:44:28 +0200
 
 simpleburn (1.7.0-3) unstable; urgency=medium
 
