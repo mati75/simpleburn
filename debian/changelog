@@ -1,5 +1,6 @@
-simpleburn (1.7.3-2~ppa1) xenial; urgency=medium
+simpleburn (1.8.0-1~ppa1) xenial; urgency=medium
 
+  * New upstream release.
   * Build with gtk3.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 10 Apr 2016 14:38:38 +0200
