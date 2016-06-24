@@ -3,7 +3,7 @@ Section: utils
 Priority: extra
 Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
 Build-Depends: debhelper (>= 9), cmake (>= 2.6), pkg-config, libudev-dev,
- libburn-dev, libgtk2.0-dev (>= 2.12) 
+ libburn-dev, libgtk-3-dev 
 Standards-Version: 3.9.6
 Homepage: http://simpleburn.tuxfamily.org
 Vcs-Git: git://github.com/mati75/simpleburn.git
