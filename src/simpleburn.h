@@ -13,9 +13,6 @@ struct {
 	GtkLabel *info_mediacapacity;
 	GtkLabel *info_log;
 	GtkProgressBar *info_progressbar;
-	GtkLabel *info_estimatedtime;
-	GtkLabel *info_elapsedtime;
-	GtkLabel *info_remainingtime;
 	GtkDialog *dialog_confirmerase;
 
 	GtkNotebook *tabs_actions;
@@ -32,15 +29,12 @@ struct {
 	GtkButton *bt_previewvideo;
 	GtkFileChooserButton *ctrl_videoextractdir;
 	GtkEntry *ctrl_videoextractfile;
-	GtkEntry *ctrl_videocropinfos;
 	GtkComboBox *ctrl_videotitle;
 	GtkListStore *model_videotitle;
 	GtkComboBox *ctrl_videolanguage;
 	GtkListStore *model_videolanguage;
 	GtkComboBox *ctrl_videosubtitles;
 	GtkListStore *model_videosubtitles;
-	GtkComboBox *ctrl_videoquality;
-	GtkListStore *model_videoquality;
 	//iso tab:
 	GtkWidget *tab_extractiso;
 	GtkButton *bt_extractiso;
@@ -52,12 +46,13 @@ struct {
 	GtkFileChooserButton *ctrl_burndir;
 	GtkButton *bt_dirburn;
 	GtkButton *bt_fileburn;
+	GtkButton *bt_audioburn;
 	//blank tab:
 	GtkWidget *tab_blank;
 	GtkButton *bt_blankfast;
 	GtkButton *bt_blankfull;
 	
-	GtkButton *buttons[10];
+	GtkButton *buttons[11];
 	gint buttonscount;
 } ui;
 

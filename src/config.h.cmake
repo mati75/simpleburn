@@ -2,5 +2,3 @@
 #define PROJECT_VERSION "@PROJECT_VERSION@"
 #define LOCALE_DIR "@LOCALE_DIR@"
 #define UI_FILE "@UI_FILE@"
-#define APP_ICON "@APP_ICON@"
-#define UDEV_ROOT "@UDEV_ROOT@"

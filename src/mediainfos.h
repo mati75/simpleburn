@@ -1,47 +1,17 @@
-typedef struct {
-	gint id;
-	gchar lang[3];
-} T_LanguageInfos;
+/**
+ * open cdio and wait until media is loaded
+ * returns null on cdio open error
+ * returns opened cdio when ready
+ */
+CdIo_t *loaddevice(gchar *device);
 
-typedef struct {
-	gint id;
-	gint length; //in seconds
-	T_LanguageInfos **languages;
-	gint langscount;
-	T_LanguageInfos **subtitles;
-	gint subscount;
-	gchar *cropinfos;
-} T_TitleInfos;
+void load_audioinfos(CdIo_t *cdio);
 
-struct {
-	gchar *mediatype;
-	gboolean hasmedia;
-	gboolean cdtype;
-	gchar * mediacontent;
-	gboolean emptycontent;
-	gboolean videocontent;
-	gboolean audiocontent;
-	gboolean iso9660content;
-	gboolean rewritablemedia;
-	guint64 mediacapacity;
-	guint64 mediasize; //bytes
-	guint8 trackscount;
-	gchar *medialabel;
-	T_TitleInfos **titles;
-} mediainfos;
+void load_mediainfos(gchar *device);
 
-void init_mediainfos();
+gboolean load_videoinfos(gchar *device); //video DVD (list title and lengths)
 
-void free_mediainfos();
+void load_titleinfos(gchar *device, gint title); //video DVD (title detail)
 
-gchar **load_mediainfos();
-
-void commoninfos(gchar *firstinfoline);
-
-void audioinfos(gchar **infolines);
-
-void videoinfos(gchar **infolines);
-
-void on_detectmedia_clicked(GtkWidget *widget, gpointer user_data);
-
-void on_videotitle_changed(GtkWidget *widget, gpointer user_data);
+void recase(gchar *str);
+void lowercase(gchar *str);

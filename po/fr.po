@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simpleburn 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-05 16:54+0100\n"
+"POT-Creation-Date: 2016-06-14 23:36+0200\n"
 "PO-Revision-Date: 2008-12-24 19:08+0100\n"
 "Last-Translator:  <frankendres@tuxfamily.org>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -18,19 +18,147 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:8
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:14
+msgid "flac"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:15
+msgid "FLAC (lossless)"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:18
+msgid "ogg"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:19
+msgid "OGG / Vorbis"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:22
+msgid "mp3"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:23
+msgid "MP3"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:26
+msgid "wav"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:27
+msgid "WAV (lossless)"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:59
+msgid "ISO file:"
+msgstr "Fichier ISO :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:66
+msgid "Directory:"
+msgstr "Dossier :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:77
+msgid "Select an ISO image file to burn"
+msgstr "Selectionner un fichier ISO à graver"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:89
+msgid "Select a directory to burn"
+msgstr "Sélectionner un dossier à graver"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:100
+msgid "Burn ISO"
+msgstr "Graver ISO"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:118
+msgid "Burn data"
+msgstr "Graver données"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:133
+msgid "Burn audio CD"
+msgstr "Graver CD audio"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:197
+msgid "Fast blanking"
+msgstr "Effacement rapide"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:212
+msgid "Full blanking"
+msgstr "Effacement complet"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:263
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:938
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1185
+msgid "Select destination directory"
+msgstr "Sélectionner le dossier de destination"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:291
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:951
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1216
+msgid "Destination directory:"
+msgstr "Dossier de destination"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:298
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1227
+msgid "Filename:"
+msgstr "Nom du fichier :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:307
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:989
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1044
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1263
+msgid "Extract"
+msgstr "Extraire"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:425
+msgid "_File"
+msgstr "_Fichier"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:449
+msgid "Help"
+msgstr "Aide"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:484
+msgid "CD / DVD device:"
+msgstr "Périphérique CD / DVD :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:512
+msgid "Get media informations"
+msgstr "Analyser le média"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:527
+msgid "Eject"
+msgstr "Ejecter"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:591
+msgid "Type:"
+msgstr "Type :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:598
+msgid "Capacity:"
+msgstr "Capacité :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:661
+msgid "Content:"
+msgstr "Contenu :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:681
+msgid "Size:"
+msgstr "Taille :"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:754
 msgid "About SimpleBurn"
 msgstr "À propos de SimpleBurn"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:17
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:763
 msgid "http://simpleburn.tuxfamily.org"
 msgstr ""
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:18
-msgid "CeCILL <http://www.cecill.info/licences.en.html>"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:764
+msgid "CeCILL <http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html>"
 msgstr ""
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:20
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:766
 msgid ""
 "- cs : Jaromír Cápík <tavvva@seznam.cz>\n"
 "- de : Christoph Zeiler <moonborn@moonblade.org>\n"
@@ -45,248 +173,141 @@ msgid ""
 "<dkorzhevin@lsupport.net>\n"
 msgstr ""
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:94
-msgid "Fast blanking"
-msgstr "Effacement rapide"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:109
-msgid "Full blanking"
-msgstr "Effacement complet"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:139
-msgid "ISO file:"
-msgstr "Fichier ISO :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:149
-msgid "Directory:"
-msgstr "Dossier :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:161
-msgid "Select an ISO image file to burn"
-msgstr "Selectionner un fichier ISO à graver"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:174
-msgid "Select a directory to burn"
-msgstr "Sélectionner un dossier à graver"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:186
-msgid "Burn file"
-msgstr "Graver le fichier"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:201
-msgid "Burn directory"
-msgstr "Graver le dossier"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:276
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:863
 msgid "Attention: CD or DVD contains data."
 msgstr "Attention : le CD ou DVD contient des données."
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:288
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:875
 msgid "Do You really want to erase it ?"
 msgstr "Voulez vous vraiment l'effacer ?"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:323
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:441
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:513
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:775
-msgid "Extract"
-msgstr "Extraire"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:336
-msgid "Track"
-msgstr "Piste"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:347
-msgid "Title"
-msgstr "Titre"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:358
-msgid "Length"
-msgstr "Durée"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:405
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:469
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:630
-msgid "Select destination directory"
-msgstr "Sélectionner le dossier de destination"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:418
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:497
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:683
-msgid "Destination directory:"
-msgstr "Dossier de destination"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:429
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:962
 msgid "Format:"
 msgstr "Format"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:504
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:694
-msgid "Filename:"
-msgstr "Nom du fichier :"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1002
+msgid "Track"
+msgstr "Piste"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:643
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1013
+msgid "Title"
+msgstr "Titre"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1024
+msgid "Length"
+msgstr "Durée"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1155
 msgid "Title:"
 msgstr "Titre :"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:650
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1162
 msgid "Language:"
-msgstr "Language :"
+msgstr "Langage :"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:661
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1173
 msgid "Subtitles:"
 msgstr "Sous-titres :"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:672
-msgid "Quality:"
-msgstr "Qualité :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:739
-msgid "Crop:"
-msgstr "Découpage :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:760
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1248
 msgid "Preview"
 msgstr "Prévisualiser"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:870
-msgid "_File"
-msgstr "_Fichier"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:109
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:207
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:239
+msgid "none"
+msgstr "aucun"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:894
-msgid "Help"
-msgstr "Aide"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:929
-msgid "CD / DVD device:"
-msgstr "Périphérique CD / DVD :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:957
-msgid "Get media informations"
-msgstr "Analyser le média"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:972
-msgid "Eject"
-msgstr "Ejecter"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1036
-msgid "Type:"
-msgstr "Type :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1043
-msgid "Capacity:"
-msgstr "Capacité :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1106
-msgid "Content:"
-msgstr "Contenu :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1126
-msgid "Size:"
-msgstr "Taille :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1202
-msgid "Estimated time:"
-msgstr "Temps estimé :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1226
-msgid "Elapsed time:"
-msgstr "Temps écoulé :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1250
-msgid "Remaining time:"
-msgstr "Temps restant :"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:45
-msgid "Fast blanking ..."
-msgstr "Effacement rapide ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:60
-msgid "Full blanking ..."
-msgstr "Effacement complet ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:76
-msgid "Error: please select file to burn."
-msgstr "Erreur : veuillez sélectionner un fichier à graver."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:80
-msgid "Burning file ..."
-msgstr "Gravure du fichier ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:97
-msgid "Error: please select directory to burn."
-msgstr "Erreur : veuillez sélectionner un dossier à graver."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:101
-msgid "Burning directory ..."
-msgstr "Gravure du dossier ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:153
-msgid "Extracting audio CD ..."
-msgstr "Extraction du CD audio ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:208
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:227
-msgid "Error: please enter a filename."
-msgstr "Erreur : veuillez saisir un nom de fichier."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:212
-msgid "Extracting video DVD ..."
-msgstr "Extraction du DVD vidéo ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:232
-msgid "Extracting ISO image ..."
-msgstr "Extraction de l'image ISO ..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:58
-msgid "Operation completed."
-msgstr "Opération terminée."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:61
-msgid "Error: please check there is enough space on media."
-msgstr ""
-"Erreur : veuillez vérifier qu'il y a assez d'espace disponible sur le média."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:63
-msgid "Error: something went wrong."
-msgstr "Erreur : quelque chose n'a pas fonctionné."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:69
-msgid "audio"
-msgstr ""
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:73
-msgid "video"
-msgstr "vidéo"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:78
-msgid "data"
-msgstr "données"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:115
-msgid "no media"
-msgstr "aucun média"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:214
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:214
 msgid "Extract audio"
 msgstr "Extraire audio"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:215
-msgid "Extract video"
-msgstr "Extraire vidéo"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:215
+msgid "audio"
+msgstr ""
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:216
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:216
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:234
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:247
+msgid "MB"
+msgstr "Mo"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:228
 msgid "Extract ISO"
 msgstr "Extraire ISO"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:217
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:229
+msgid "data"
+msgstr "données"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:231
+msgid "Extract video"
+msgstr "Extraire vidéo"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:232
+msgid "video"
+msgstr "vidéo"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:244
 msgid "Burn"
 msgstr "Graver"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:218
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:254
 msgid "Erase"
 msgstr "Effacer"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:240
-msgid "none"
-msgstr "aucun"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/progress.c:42
+msgid "Done"
+msgstr "Terminé"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/progress.c:43
+msgid "Error"
+msgstr "Erreur"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:52
+msgid "Fast blanking ..."
+msgstr "Effacement rapide ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:68
+msgid "Full blanking ..."
+msgstr "Effacement complet ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:85
+msgid "Error: please select file to burn."
+msgstr "Erreur : veuillez sélectionner un fichier à graver."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:91
+msgid "Burning file ..."
+msgstr "Gravure de fichier ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:109
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:133
+msgid "Error: please select directory to burn."
+msgstr "Erreur : veuillez sélectionner un dossier à graver."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:115
+msgid "Burning data ..."
+msgstr "Gravure de données ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:138
+msgid "Burning audio CD ..."
+msgstr "Gravure de CD audio ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:188
+msgid "Extracting audio CD ..."
+msgstr "Extraction du CD audio ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:230
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:266
+msgid "Error: please enter a filename."
+msgstr "Erreur : veuillez saisir un nom de fichier."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:254
+msgid "Extracting video DVD ..."
+msgstr "Extraction du DVD vidéo ..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:273
+msgid "Extracting ISO image ..."
+msgstr "Extraction de l'image ISO ..."
+

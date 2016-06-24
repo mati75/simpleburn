@@ -2,11 +2,14 @@
 #include <libintl.h>
 #include <locale.h> 
 #include <glob.h>
+#include <cdio/cdio.h>
+#include <cdio/mmc_cmds.h>
+#include <cdio/cd_types.h>
 
 #include "simpleburn.h"
-#include "mediainfos.h"
 #include "callbacks.h"
 #include "progress.h"
+#include "mediainfos.h"
 #include "config.h"
 
 
@@ -19,9 +22,8 @@ void exit_program() {
 
 
 void init_program() {
-	linkcallbacks(); //force static code linkage: defined only in glade (GtkBuilder UI file) - not read during  compilation
+	callbackslink(); //force static code linkage: defined only in glade (GtkBuilder UI file) - not read during compilation
 	init_widgets_references();
-	init_mediainfos();
 	commandinfos.pid = 0;
 	detect_devices();
 	gtk_widget_set_sensitive((GtkWidget *) ui.bt_abort, FALSE);
@@ -52,9 +54,6 @@ void init_widgets_references() {
 	ui.info_log = (GtkLabel *) gtk_builder_get_object(ui.xml, "log");
 	ui.tabs_actions = (GtkNotebook *) gtk_builder_get_object(ui.xml, "tabs");
 	ui.info_progressbar = (GtkProgressBar *) gtk_builder_get_object(ui.xml, "progressbar");
-	ui.info_estimatedtime = (GtkLabel *) gtk_builder_get_object(ui.xml, "estimatedtime");
-	ui.info_elapsedtime = (GtkLabel *) gtk_builder_get_object(ui.xml, "elapsedtime");
-	ui.info_remainingtime = (GtkLabel *) gtk_builder_get_object(ui.xml, "remainingtime");
 	ui.dialog_confirmerase = (GtkDialog *) gtk_builder_get_object(ui.xml, "confirmerase");
 	//audio tab:
 	ui.tab_extractaudio = (GtkWidget *) gtk_builder_get_object(ui.xml, "extractingaudio");
@@ -72,15 +71,12 @@ void init_widgets_references() {
 	ui.buttons[4] = ui.bt_previewvideo;
 	ui.ctrl_videoextractdir = (GtkFileChooserButton *) gtk_builder_get_object(ui.xml, "videoextractdir");
 	ui.ctrl_videoextractfile = (GtkEntry *) gtk_builder_get_object(ui.xml, "videoextractfile");
-	ui.ctrl_videocropinfos = (GtkEntry *) gtk_builder_get_object(ui.xml, "videocropinfos");
 	ui.ctrl_videotitle = (GtkComboBox *) gtk_builder_get_object(ui.xml, "videotitle");
 	ui.model_videotitle = (GtkListStore *) gtk_combo_box_get_model(ui.ctrl_videotitle);
 	ui.ctrl_videolanguage = (GtkComboBox *) gtk_builder_get_object(ui.xml, "videolanguage");
 	ui.model_videolanguage = (GtkListStore *) gtk_combo_box_get_model(ui.ctrl_videolanguage);
 	ui.ctrl_videosubtitles = (GtkComboBox *) gtk_builder_get_object(ui.xml, "videosubtitles");
 	ui.model_videosubtitles = (GtkListStore *) gtk_combo_box_get_model(ui.ctrl_videosubtitles);
-	ui.ctrl_videoquality = (GtkComboBox *) gtk_builder_get_object(ui.xml, "videoquality");
-	ui.model_videoquality = (GtkListStore *) gtk_combo_box_get_model(ui.ctrl_videoquality);
 	//iso tab:
 	ui.tab_extractiso = (GtkWidget *) gtk_builder_get_object(ui.xml, "extractingiso");
 	ui.bt_extractiso = (GtkButton *) gtk_builder_get_object(ui.xml, "extractiso");
@@ -95,38 +91,39 @@ void init_widgets_references() {
 	ui.buttons[6] = ui.bt_dirburn;
 	ui.bt_fileburn = (GtkButton *) gtk_builder_get_object(ui.xml, "fileburn");
 	ui.buttons[7] = ui.bt_fileburn;
+	ui.bt_audioburn = (GtkButton *) gtk_builder_get_object(ui.xml, "audioburn");
+	ui.buttons[8] = ui.bt_audioburn;
 	//blank tab:
 	ui.tab_blank = (GtkWidget *) gtk_builder_get_object(ui.xml, "blanking");
 	ui.bt_blankfast = (GtkButton *) gtk_builder_get_object(ui.xml, "blankfast");
-	ui.buttons[8] = ui.bt_blankfast;
+	ui.buttons[9] = ui.bt_blankfast;
 	ui.bt_blankfull = (GtkButton *) gtk_builder_get_object(ui.xml, "blankfull");
-	ui.buttons[9] = ui.bt_blankfull;
-	ui.buttonscount = 10;
+	ui.buttons[10] = ui.bt_blankfull;
+	ui.buttonscount = 11;
 }
 
 
 void detect_devices() {
+	gint i;
+	gchar **devices;
+	cdio_drive_read_cap_t rc; cdio_drive_write_cap_t wc; cdio_drive_misc_cap_t mc;
 	GtkTreeIter iter;
-	glob_t devices; gint exitvalue; gchar *output;
-	glob("/sys/block/*", 0, NULL, &devices);
-	for (gint i = 0; i < devices.gl_pathc; i++) {
-		gchar *devicename = g_path_get_basename(devices.gl_pathv[i]);
-		if (g_ascii_strncasecmp("ram", devicename, 3) != 0 && g_ascii_strncasecmp("loop", devicename, 4) != 0 
-		&& g_ascii_strncasecmp("sd", devicename, 2) != 0 && g_ascii_strncasecmp("md", devicename, 2) != 0) {
-			gchar *command = g_strdup_printf("%s/cdrom_id /dev/%s", UDEV_ROOT, devicename);
-			g_spawn_command_line_sync(command, &output, NULL, &exitvalue, NULL);
-			if ((exitvalue == 0) && g_regex_match_simple("ID_CDROM_CD_R=1", output, 0, 0)) {
-					gchar *devicepath = g_strdup_printf("/dev/%s", devicename);
-					gtk_list_store_append(ui.model_opticaldevice, &iter);
-					gtk_list_store_set(ui.model_opticaldevice, &iter, 0, devicepath, -1);
-					g_free(devicepath);
+	
+	enablebuttons(false);
+	gtk_widget_set_sensitive((GtkWidget *) ui.bt_abort, false);
+	devices = cdio_get_devices (DRIVER_UNKNOWN);
+	if (devices != NULL) {
+		for (i = 0; devices[i] != NULL; i++) {
+			cdio_get_drive_cap_dev (devices[i], &rc, &wc, &mc);
+			if (wc && CDIO_DRIVE_CAP_WRITE != 0) {
+				gtk_list_store_append(ui.model_opticaldevice, &iter);
+				gtk_list_store_set(ui.model_opticaldevice, &iter, 0, devices[i], -1);
 			}
-			g_free(output);
-			g_free(command);
 		}
-		g_free(devicename);
+		g_strfreev (devices);
+		gtk_combo_box_set_active_iter(ui.ctrl_opticaldevice, &iter);
+		enablebuttons(true);
 	}
-	gtk_combo_box_set_active_iter(ui.ctrl_opticaldevice, &iter);
 }
 
 
@@ -140,9 +137,10 @@ int main(int argc, char *argv[]) {
 	gtk_builder_connect_signals(ui.xml, NULL);
 	init_program();
 	GtkWindow *mainwindow = (GtkWindow *) gtk_builder_get_object(ui.xml, "mainwindow");
-	gtk_window_set_icon_from_file(mainwindow, APP_ICON, NULL);
+	gtk_window_set_default_icon_name(PROJECT_NAME);
 	GtkAboutDialog *aboutdialog = (GtkAboutDialog *) gtk_builder_get_object(ui.xml, "aboutdialog");
 	gtk_about_dialog_set_version(aboutdialog, PROJECT_VERSION);
+	gtk_about_dialog_set_logo_icon_name(aboutdialog, PROJECT_NAME);
 	gtk_widget_show((GtkWidget *) mainwindow);
 	gtk_main();
 }

@@ -1,3 +1,18 @@
+2016-06-16, version 1.8.0: rewritten (new prerequisites) and simplified
+	+ restored LibCDIO for media detection (much faster than UDEV one -> abandonned)
+	+ using LibDVDRead for video DVD detection - thanks to LsDVD authors (https://sourceforge.net/projects/lsdvd)
+	+ CLI:
+		- fixed video DVD ripping (A/V sync, aspect ratio) - mencoder now must be compiled with XVid support
+		- audio file is available for video DVD rips
+		- use TAO audio recording instead of DAO in order to allow 2 seconds silence between tracks
+		- API change: extract -> e-audio, e-video, e-iso, blank/burn -> b-blank, b-data, b-iso, b-audio
+		- no more checks (done in GUI)
+	+ GUI:
+		- use GTK-3 by default (GTK-2 is still supported)
+		- user now has to choose by himself between data or audio CD burning
+		- no more quality choice for DVD ripping (high quality only)
+		- moved application icon (now works on about dialog)
+		- (no more progress display - for now)
 2015-03-18, version 1.7.3:
 	- media can now be unmounted using udisksctl
 	- directory are now burned with UDF filesystem, as video DVD if appropriate
