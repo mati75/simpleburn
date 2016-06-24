@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simpleburn 1.6.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-05 16:54+0100\n"
+"POT-Creation-Date: 2016-06-14 23:36+0200\n"
 "PO-Revision-Date: 2014-04-27 23:49+0100\n"
 "Last-Translator: Jay Alexander Fleming <tito.nehru.naser@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,23 +15,155 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Serbian\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:8
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:14
+msgid "flac"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:15
+msgid "FLAC (lossless)"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:18
+msgid "ogg"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:19
+msgid "OGG / Vorbis"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:22
+msgid "mp3"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:23
+msgid "MP3"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:26
+msgid "wav"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:27
+msgid "WAV (lossless)"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:59
+msgid "ISO file:"
+msgstr "Одраз диска:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:66
+msgid "Directory:"
+msgstr "Директоријум:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:77
+msgid "Select an ISO image file to burn"
+msgstr "Одаберите одраз диска за нарезивање"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:89
+msgid "Select a directory to burn"
+msgstr "Изаберите директоријум за нарезивање"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:100
+#, fuzzy
+msgid "Burn ISO"
+msgstr "Нарежи"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:118
+#, fuzzy
+msgid "Burn data"
+msgstr "Нови диск..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:133
+msgid "Burn audio CD"
+msgstr "Упиши Звучни диск"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:197
+msgid "Fast blanking"
+msgstr "Брзо брисање"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:212
+msgid "Full blanking"
+msgstr "Потпуно брисање"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:263
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:938
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1185
+msgid "Select destination directory"
+msgstr "Изаберите одредиште"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:291
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:951
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1216
+msgid "Destination directory:"
+msgstr "Одредишни директоријум:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:298
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1227
+msgid "Filename:"
+msgstr "Име датотеке:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:307
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:989
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1044
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1263
+msgid "Extract"
+msgstr "Извуци"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:425
+msgid "_File"
+msgstr "_Датотека"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:449
+msgid "Help"
+msgstr "Помоћ"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:484
+msgid "CD / DVD device:"
+msgstr "ЦД-ДВД уређај:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:512
+msgid "Get media informations"
+msgstr "Преузми податке о медију"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:527
+msgid "Eject"
+msgstr "Избаци"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:591
+msgid "Type:"
+msgstr "Врста:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:598
+msgid "Capacity:"
+msgstr "Доступно:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:661
+msgid "Content:"
+msgstr "Садржај:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:681
+msgid "Size:"
+msgstr "Величина:"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:754
 msgid "About SimpleBurn"
 msgstr "О програму"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:17
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:763
 msgid "http://simpleburn.tuxfamily.org"
 msgstr ""
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:18
-msgid "CeCILL <http://www.cecill.info/licences.en.html>"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:764
+#, fuzzy
+msgid "CeCILL <http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html>"
 msgstr "ЦеЦИЛЛ <http://www.cecill.info/licences.en.html>"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:20
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:766
 msgid ""
 "- cs : Jaromír Cápík <tavvva@seznam.cz>\n"
 "- de : Christoph Zeiler <moonborn@moonblade.org>\n"
@@ -42,7 +174,8 @@ msgid ""
 "- pl : Robert Wojewódzki <robwoj44@poczta.onet.pl>\n"
 "- sr : Jay Alexander Flemingódzki <tito.nehru.naser@gmail.com>\n"
 "- sv : Niklas Grahn <terra.unknown@yahoo.com>\n"
-"- ru : Andrey Frantsuzov <pokazsch@yandex.ru> & Dmitry Korzhevin <dkorzhevin@lsupport.net>\n"
+"- ru : Andrey Frantsuzov <pokazsch@yandex.ru> & Dmitry Korzhevin "
+"<dkorzhevin@lsupport.net>\n"
 msgstr ""
 "- cs : Јаромир Цапик <tavvva@seznam.cz>\n"
 "- de : Кристоф Цајлер <moonborn@moonblade.org>\n"
@@ -53,252 +186,185 @@ msgstr ""
 "- pl : Роберт Војеводски <robwoj44@poczta.onet.pl>\n"
 "- sr : Џеј Александар Флеминг <tito.nehru.naser@gmail.com>\n"
 "- sv : Никлас Гран <terra.unknown@yahoo.com>\n"
-"- ru : Андреј Французов <pokazsch@yandex.ru> и Дмитриј Коржевин <dkorzhevin@lsupport.net>\n"
+"- ru : Андреј Французов <pokazsch@yandex.ru> и Дмитриј Коржевин "
+"<dkorzhevin@lsupport.net>\n"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:94
-msgid "Fast blanking"
-msgstr "Брзо брисање"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:109
-msgid "Full blanking"
-msgstr "Потпуно брисање"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:139
-msgid "ISO file:"
-msgstr "Одраз диска:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:149
-msgid "Directory:"
-msgstr "Директоријум:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:161
-msgid "Select an ISO image file to burn"
-msgstr "Одаберите одраз диска за нарезивање"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:174
-msgid "Select a directory to burn"
-msgstr "Изаберите директоријум за нарезивање"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:186
-msgid "Burn file"
-msgstr "Нарежи датотеку"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:201
-msgid "Burn directory"
-msgstr "Нарежи директоријум"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:276
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:863
 msgid "Attention: CD or DVD contains data."
 msgstr "УПОЗОРЕЊЕ! ЦД или ДВД садржи податке!"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:288
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:875
 msgid "Do You really want to erase it ?"
 msgstr "Да ли сте сигурни да желите да га пребришете?"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:323
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:441
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:513
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:775
-msgid "Extract"
-msgstr "Извуци"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:336
-msgid "Track"
-msgstr "Нумера"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:347
-msgid "Title"
-msgstr "Наслов"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:358
-msgid "Length"
-msgstr "Трајање"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:405
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:469
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:630
-msgid "Select destination directory"
-msgstr "Изаберите одредиште"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:418
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:497
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:683
-msgid "Destination directory:"
-msgstr "Одредишни директоријум:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:429
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:962
 msgid "Format:"
 msgstr "Формат:"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:504
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:694
-msgid "Filename:"
-msgstr "Име датотеке:"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1002
+msgid "Track"
+msgstr "Нумера"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:643
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1013
+msgid "Title"
+msgstr "Наслов"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1024
+msgid "Length"
+msgstr "Трајање"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1155
 msgid "Title:"
 msgstr "Наслов:"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:650
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1162
 msgid "Language:"
 msgstr "Језик:"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:661
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1173
 msgid "Subtitles:"
 msgstr "Превод:"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:672
-msgid "Quality:"
-msgstr "Квалитет:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:739
-msgid "Crop:"
-msgstr "Исеци:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:760
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/simpleburn.ui:1248
 msgid "Preview"
 msgstr "Претпреглед"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:870
-msgid "_File"
-msgstr "_Датотека"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:109
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:207
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:239
+msgid "none"
+msgstr "ништа"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:894
-msgid "Help"
-msgstr "Помоћ"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:929
-msgid "CD / DVD device:"
-msgstr "ЦД-ДВД уређај:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:957
-msgid "Get media informations"
-msgstr "Преузми податке о медију"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:972
-msgid "Eject"
-msgstr "Избаци"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1036
-msgid "Type:"
-msgstr "Врста:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1043
-msgid "Capacity:"
-msgstr "Доступно:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1106
-msgid "Content:"
-msgstr "Садржај:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1126
-msgid "Size:"
-msgstr "Величина:"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1202
-msgid "Estimated time:"
-msgstr "Процењено време: "
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1226
-msgid "Elapsed time:"
-msgstr "Протекло је: "
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/simpleburn.ui:1250
-msgid "Remaining time:"
-msgstr "Преостало је: "
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:45
-msgid "Fast blanking ..."
-msgstr "Брзо брисање..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:60
-msgid "Full blanking ..."
-msgstr "Потпуно брисање..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:76
-msgid "Error: please select file to burn."
-msgstr "Грешка! Нисте одабрали одраз диска за нарезивање."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:80
-msgid "Burning file ..."
-msgstr "Нарезујем датотеку..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:97
-msgid "Error: please select directory to burn."
-msgstr "Грешка! Нисте одабрали директоријум за нарезивање."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:101
-msgid "Burning directory ..."
-msgstr "Нарезујем директоријум..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:153
-msgid "Extracting audio CD ..."
-msgstr "Извлачим звучне нумере..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:208
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:227
-msgid "Error: please enter a filename."
-msgstr "Грешка! Нисте навели име датотеке."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:212
-msgid "Extracting video DVD ..."
-msgstr "Извозим видео диск..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/callbacks.c:232
-msgid "Extracting ISO image ..."
-msgstr "Распакујем одраз диска..."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:58
-msgid "Operation completed."
-msgstr "Завршио сам!"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:61
-msgid "Error: please check there is enough space on media."
-msgstr "Грешка! Недовољно је простора на медију."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/progress.c:63
-msgid "Error: something went wrong."
-msgstr "Грешка! Нешто је кренуло наопако."
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:69
-msgid "audio"
-msgstr "звук"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:73
-msgid "video"
-msgstr "видео"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:78
-msgid "data"
-msgstr "подаци"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:115
-msgid "no media"
-msgstr "нема доступних дискова"
-
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:214
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:214
 msgid "Extract audio"
 msgstr "Извуци звучне нумере"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:215
-msgid "Extract video"
-msgstr "Извуци видео"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:215
+msgid "audio"
+msgstr "звук"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:216
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:216
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:234
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:247
+msgid "MB"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:228
 msgid "Extract ISO"
 msgstr "Распакуј одраз диска"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:217
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:229
+msgid "data"
+msgstr "подаци"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:231
+msgid "Extract video"
+msgstr "Извуци видео"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:232
+msgid "video"
+msgstr "видео"
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:244
 msgid "Burn"
 msgstr "Нарежи"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:218
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/mediainfos.c:254
 msgid "Erase"
 msgstr "Пребриши"
 
-#: /home/frank/Documents/Developpements/sallu/simpleburn-1.7.0/src/mediainfos.c:240
-msgid "none"
-msgstr "ништа"
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/progress.c:42
+msgid "Done"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/progress.c:43
+msgid "Error"
+msgstr ""
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:52
+msgid "Fast blanking ..."
+msgstr "Брзо брисање..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:68
+msgid "Full blanking ..."
+msgstr "Потпуно брисање..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:85
+msgid "Error: please select file to burn."
+msgstr "Грешка! Нисте одабрали одраз диска за нарезивање."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:91
+msgid "Burning file ..."
+msgstr "Нарезујем датотеку..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:109
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:133
+msgid "Error: please select directory to burn."
+msgstr "Грешка! Нисте одабрали директоријум за нарезивање."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:115
+#, fuzzy
+msgid "Burning data ..."
+msgstr "Нарезујем директоријум..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:138
+#, fuzzy
+msgid "Burning audio CD ..."
+msgstr "Извлачим звучне нумере..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:188
+msgid "Extracting audio CD ..."
+msgstr "Извлачим звучне нумере..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:230
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:266
+msgid "Error: please enter a filename."
+msgstr "Грешка! Нисте навели име датотеке."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:254
+msgid "Extracting video DVD ..."
+msgstr "Извозим видео диск..."
+
+#: /home/frank/Documents/Developpements/sallu/simpleburn-1.8.0/src/callbacks.c:273
+msgid "Extracting ISO image ..."
+msgstr "Распакујем одраз диска..."
+
+#, fuzzy
+#~ msgid "normal"
+#~ msgstr "Формат:"
+
+#~ msgid "Quality:"
+#~ msgstr "Квалитет:"
+
+#~ msgid "Crop:"
+#~ msgstr "Исеци:"
+
+#~ msgid "no media"
+#~ msgstr "нема доступних дискова"
+
+#~ msgid "Burn file"
+#~ msgstr "Нарежи датотеку"
+
+#~ msgid "Burn directory"
+#~ msgstr "Нарежи директоријум"
+
+#~ msgid "Estimated time:"
+#~ msgstr "Процењено време: "
+
+#~ msgid "Elapsed time:"
+#~ msgstr "Протекло је: "
+
+#~ msgid "Remaining time:"
+#~ msgstr "Преостало је: "
+
+#~ msgid "Operation completed."
+#~ msgstr "Завршио сам!"
+
+#~ msgid "Error: please check there is enough space on media."
+#~ msgstr "Грешка! Недовољно је простора на медију."
+
+#~ msgid "Error: something went wrong."
+#~ msgstr "Грешка! Нешто је кренуло наопако."
 
 #, fuzzy
 #~ msgid "Burn file or directory"
@@ -325,9 +391,6 @@ msgstr "ништа"
 #~ msgid "Detect"
 #~ msgstr "Истражи"
 
-#~ msgid "Burn audio CD"
-#~ msgstr "Упиши Звучни диск"
-
 #~ msgid "Burn data CD / DVD"
 #~ msgstr "Упиши Диск са подацима"
 
@@ -336,9 +399,6 @@ msgstr "ништа"
 #~ "<i>ПАЖЊА:\n"
 #~ "\tОГГ, ФЛАК, МП3 и сличне звучне записе\n"
 #~ "\tуписујете као Диск са подацима.</i>"
-
-#~ msgid "Burn audio / data"
-#~ msgstr "Нови диск..."
 
 #~ msgid "Copy CD / DVD"
 #~ msgstr "Умножи диск"

@@ -1,16 +1,17 @@
 Requirements:
-- gtk+2 or gtk+3
-- burning suite: cdrtools (cdrecord, cdda2wav, mkisofs) / cdrkit (*** with symlinks ***: cdrecord->wodim, cdda2wav->icedax, genisoimage->mkisofs)
-- detection: cdrom_id, blkid, isosize, mplayer (video DVD detection)
-- burning and extracting: flac, mpg123, lame (for MP3 audio extracting), vorbis-tools, mencoder (DVD ripping)
-- video preview / audio listening: gmplayer
+- gtk+2 or gtk+3 (default)
+- burning suite: cdrtools / cdrkit (with symlinks: cdrecord->wodim, cdda2wav->icedax, genisoimage->mkisofs)
+- detection: libdvdread, libcddb, libcdio
+- audio burning and extracting: flac (flac<->wav), mpg123 (mp3->wav), lame (wav->mp3), vorbis-tools (ogg<->wav)
+- video DVD ripping: mencoder with mandatory xvid and optional mp3 codec support - simpleburn.sh can be edited to change quality & codecs
+- video / audio preview: gmplayer (or symlink with same command line options)
 
 Installation procedure:
 1) extract the archive containing the program sources,
 2) enter the directory containing the sources,
 3) run the command `cmake .'; options:
 	`-DCMAKE_INSTALL_PREFIX=/usr': to install into `/usr' instead of `/usr/local';
-	`-DGTK3=ON': to enable gtk+3 (defaults to gtk+2)
+	`-DGTK2=on': to use GTK+2 instead of GTK+3
 4) run the command `make',
 5) run the command `make install'
 	(or `make install DESTDIR=absolute_path_to_somedir' to place the files

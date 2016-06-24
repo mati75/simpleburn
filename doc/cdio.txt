@@ -1,0 +1,33 @@
+cd_types.h:
+	- CDIO_FS_AUDIO, CDIO_FS_ISO_9660, CDIO_FS_ISO_UDF
+	- cdio_iso_analysis_t, cdio_fs_anal_t
+	- cdio_guess_cd_type()
+	
+devices.h:
+	- cdio_drive_read_cap_t
+	- cdio_open(), cdio_destroy(), cdio_get_devices(), cdio_get_drive_cap_dev()
+
+disc.h:
+	- cdio_get_discmode(), cdio_get_disc_last_lsn(), cdio_get_num_tracks()
+
+track.h:
+	- cdio_get_track_lba()
+
+mmc_hl.h:
+	- mmc_get_disctype()
+	
+mmc_ll.h:
+	- mmc_get_event_status()
+	
+mmc_util.h:
+	- cdio_mmc_feature_profile_t
+	- mmc_is_disctype_cdrom(), mmc_is_disctype_dvd()
+	
+sector.h:
+	- CDIO_CD_FRAMES_PER_SEC
+
+--------------------------------------------------
+
+simpleburn/cdio_mmc.c:
+	- mmc_disctype_is_writable(), mmc_disctype_is_rewritable()
+	- mmc_get_disc_empty(), mmc_get_disc_capacity()

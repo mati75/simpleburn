@@ -1,13 +1,6 @@
 struct {
 	GPid pid;
-	guint progressbar_handler;
-	guint pulsebar_handler;
-	guint elapsedtime_handler;
-	GIOChannel *stdoutioc;
-	GTimeVal starttime;
-	GTimeVal progress_startttime;
-	glong estimatedtime;
-	//~ gchar *opticaldevice;
+	guint pulseupdater;
 	gint actiontype; //EXTRACT, BLANK, BURN
 } commandinfos;
 
@@ -23,12 +16,6 @@ void startprogress(gchar *commandline, gboolean pulse, gchar *message, gint acti
 
 void stopprogress(GPid pid, gint status, gpointer data);
 
-gboolean pulsebar_handler(gpointer data);
-
-gboolean progressbar_handler(GIOChannel *source, GIOCondition condition, gpointer data);
-
-gboolean elapsedtime_handler(gpointer data);
-
-gchar *timeformat(glong timeinseconds);
+gboolean pulseupdater(gpointer data);
 
 void enablebuttons(gboolean enabled);

@@ -1,15 +1,9 @@
-1.7.1 - quality improvments
-simpleburn-gauge.sh -> simpleburn-gauges.c
-video ripping: detection of all titles is unneeded
-detection: add pulse bar
-
-1.7.2 - features improvments
-Audio / data compilations
-
-
-1.7.3
-Verify integrity ?
-Support Hybrid (audio / data) media ?
-Add option to extract / write UDF formatted medias ?
-Add option to write multisession CDs ?
-Add option to append data on overwritable media ?
++ update translations
++ check size of directory (data or audio) or ISO file to burn
++ verify integrity
+? audio / data compilations
+? Support Hybrid (audio / data) media
+? add option to extract / write UDF formatted medias
+? add option to write multisession CDs
+? add option to append data on overwritable media
+? restore gauges
