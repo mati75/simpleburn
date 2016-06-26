@@ -2,7 +2,8 @@ simpleburn (1.8.0-1) UNRELEASED; urgency=medium
 
   * New upstream release. (Closes: #804788, #804549)
   * debian/control:
-    - Add libgtk-3-dev, libcdio-dev and libcddb2-dev to B-D.
+    + Add libgtk-3-dev, libcdio-dev and libcddb2-dev to B-D.
+    + Bump Standards-Version to 3.9.8 (no changes needed).
   * Drop patches -- no longer needed.
   * debian/docs: Update to new version.
 
