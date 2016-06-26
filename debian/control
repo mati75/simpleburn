@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), cmake (>= 2.6), pkg-config, libdvdread-dev,
  libburn-dev, libgtk-3-dev, libcdio-dev, libcddb2-dev
 Standards-Version: 3.9.8
 Homepage: http://simpleburn.tuxfamily.org
-Vcs-Git: git://github.com/mati75/simpleburn.git
+Vcs-Git: https://github.com/mati75/simpleburn.git
 Vcs-Browser: https://github.com/mati75/simpleburn.git
 
 Package: simpleburn
