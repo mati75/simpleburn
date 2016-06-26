@@ -5,7 +5,7 @@ simpleburn (1.8.0-1) UNRELEASED; urgency=medium
     + Add libgtk-3-dev, libcdio-dev and libcddb2-dev to B-D.
     + Bump Standards-Version to 3.9.8 (no changes needed).
     + Use secured links for VCS.
-  * Drop patches -- no longer needed.
+  * Refresh debian/patches/use-sh-as-bash.patch.
   * debian/docs: Update to new version.
   * debian/rules:
     + Enable hardening.

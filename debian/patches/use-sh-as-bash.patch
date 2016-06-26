@@ -1,0 +1,12 @@
+Description: Convert all sh scripts to bash.
+Author: Mateusz Łukasik <mati75@linuxmint.pl>
+Bug-Debian: https://bugs.debian.org/772365
+
+--- a/src/simpleburn.sh
++++ b/src/simpleburn.sh
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ 
+ WRITESPEED=0
+ PATH=$PATH:/lib/udev:/usr/lib/udev
