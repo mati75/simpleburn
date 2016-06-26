@@ -1,7 +1,9 @@
-simpleburn (1.8.0-1~ppa1) xenial; urgency=medium
+simpleburn (1.8.0-1) UNRELEASED; urgency=medium
 
-  * New upstream release.
-  * Build with gtk3.
+  * New upstream release. (Closes: #804788, #804549)
+  * debian/control:
+    - Add libgtk-3-dev, libcdio-dev and libcddb2-dev to B-D.
+  * Drop patches -- no longer needed.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 10 Apr 2016 14:38:38 +0200
 
