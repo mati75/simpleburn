@@ -7,6 +7,8 @@ simpleburn (1.8.0-1) UNRELEASED; urgency=medium
     + Use secured links for VCS.
   * Drop patches -- no longer needed.
   * debian/docs: Update to new version.
+  * debian/rules:
+    + Enable hardening.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 10 Apr 2016 14:38:38 +0200
 
