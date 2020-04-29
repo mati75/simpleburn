@@ -1,6 +1,6 @@
 Source: simpleburn
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
 Build-Depends: debhelper-compat (= 12), cmake (>= 2.6), pkg-config, libdvdread-dev,
  libburn-dev, libgtk-3-dev, libcdio-dev, libcddb2-dev
