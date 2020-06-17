@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: simpleburn
 Source: http://simpleburn.tuxfamily.org/IMG/bz2/
 Copyright: 2009-2011 Frank Endres

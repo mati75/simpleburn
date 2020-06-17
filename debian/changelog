@@ -1,5 +1,6 @@
 simpleburn (1.8.0-1) UNRELEASED; urgency=medium
 
+  [ Mateusz Łukasik ]
   * New upstream release. (Closes: #804788, #804549, LP: #1592127)
   * debian/control:
     + Add libgtk-3-dev, libcdio-dev and libcddb2-dev to B-D.
@@ -9,6 +10,13 @@ simpleburn (1.8.0-1) UNRELEASED; urgency=medium
   * debian/docs: Update to new version.
   * debian/rules:
     + Enable hardening.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 10 Apr 2016 14:38:38 +0200
 

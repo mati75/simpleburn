@@ -10,7 +10,7 @@ export DH_OPTIONS
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
-	dh $@ 
+	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DCMAKE_INSTALL_PREFIX=/usr -DGTK3=ON
